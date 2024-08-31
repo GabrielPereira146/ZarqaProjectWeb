@@ -9,7 +9,6 @@ export function Header() {
             <div className="flex w-full px-10 py-3 gap-3 align-middle">
                 <img className="size-20" src={IconLogo}/>
                 <img src={IconTitle}/>
-                
             </div>
             <nav className="flex flex-row h-10 w-full bg-sand-100 items-center align-middle justify-center">
                 <p className="h-full w-32 py-2 text-zinc-900 text-center hover:bg-sand-200/50">Home</p>

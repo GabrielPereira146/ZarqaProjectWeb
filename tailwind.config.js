@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        sand:{
-          100:'#E4D9A4', 
-          200:'#C7B977',
+        sand: {
+          100: '#E4D9A4',
+          200: '#C7B977',
         },
       },
     },
