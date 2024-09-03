@@ -15,8 +15,8 @@ export function Header() {
 
             </div>
             <nav className="flex flex-row h-10 w-full bg-sand-100 items-center align-middle justify-center">
-                <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Home</p>
-                <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Project</p>
+                <Link to={"/"} className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Home</Link>
+                <Link to={"project"} className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Project</Link>
                 <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Grants</p>
                 <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Team</p>
                 <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Newsletter</p>

@@ -1,5 +1,5 @@
 import React from "react";
-import HomeImage from "../assets/landscape.svg";
+import HomeImage from "../assets/pictures/landscapeHome.svg";
 import Dune from "../assets/duna.svg";
 import Fapesp from "../assets/fapesp.svg";
 import UFPR from "../assets/uf.svg";

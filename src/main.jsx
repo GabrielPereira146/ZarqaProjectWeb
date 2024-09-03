@@ -8,20 +8,25 @@ import {
 import "./index.css";
 import Root from "./routes/root";
 import { Home } from "./routes/home";
+import { Project } from "./routes/project";
 
-
-// Hook para alterar o título da aba
+// Hook para alterar o título da aba dinamicamente
 const usePageTitle = (title) => {
-  const location = useLocation();
-
   React.useEffect(() => {
     document.title = title;
-  }, [location, title]);
+  }, [title]);
 };
 
+// Componente Home com título dinâmico
 function HomeWithTitle() {
   usePageTitle('ZARQA Project | Home');
   return <Home />;
+}
+
+// Componente Project com título dinâmico
+function ProjectWithTitle() {
+  usePageTitle('ZARQA Project | Project');
+  return <Project />;
 }
 
 const router = createBrowserRouter([
@@ -31,11 +36,16 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <HomeWithTitle/>,
+        element: <HomeWithTitle />,
+      },
+      {
+        path: "project",
+        element: <ProjectWithTitle />,
       },
     ],
   },
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
