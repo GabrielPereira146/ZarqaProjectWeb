@@ -7,7 +7,7 @@ export function Header() {
     return (
         <header className="flex flex-col w-full h-auto items-center align-middle bg-white dark:bg-zinc-900">
             <div className="flex w-full px-10 py-3 gap-3 align-middle">
-                <img className="size-20" src={IconLogo}/>
+                <img className="size-20 fill-slate-50" src={IconLogo}/>
                 <div className="flex flex-col justify-center gap-1">
                     <p className="font-custom text-4xl font-semibold italic text-zinc-900 dark:text-white">ZARQA Project</p>
                     <p className="font-custom text-sm text-sand-200">Paleoenvironment & Prehistory</p>
