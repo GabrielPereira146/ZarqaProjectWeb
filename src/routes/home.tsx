@@ -5,6 +5,7 @@ import Fapesp from "../assets/fapesp.svg";
 import UFPR from "../assets/uf.svg";
 import Wg from "../assets/wg.svg";
 
+
 export function Home() {
     return (
         <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800 relative">
