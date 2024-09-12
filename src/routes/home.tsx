@@ -1,9 +1,10 @@
 import React from "react";
 import HomeImage from "../assets/pictures/landscapeHome.svg";
 import Dune from "../assets/duna.svg";
-import Fapesp from "../assets/fapesp.svg";
+import fapesp from "../assets/FAPESP.svg"
 import UFPR from "../assets/uf.svg";
 import Wg from "../assets/wg.svg";
+
 
 
 export function Home() {
@@ -25,7 +26,7 @@ export function Home() {
             <div className="relative">
                 <img className="w-full h-auto bg-transparent " src={Dune} alt="Landscape" />
                 <div className="absolute top-0 left-0 w-full h-auto flex flex-row items-center justify-center gap-[10%] pt-[10%] ">
-                    <img className="basis-1/6 " src={Fapesp} alt="Fapesp Logo" />
+                    <img className="basis-1/6 " src={fapesp} alt="fapesp Logo" />
                     <img className="basis-1/6 " src={UFPR} alt="UFPR Logo" />
                     <img className="basis-1/6 " src={Wg} alt="WG Logo" />
                 </div>

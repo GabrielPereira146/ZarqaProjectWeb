@@ -5,7 +5,7 @@ import IconLogo from '../assets/Logo.svg';
 
 export function Header() {
     return (
-        <header className="flex flex-col w-full h-auto items-center align-middle bg-white dark:bg-zinc-900">
+        <header className="flex flex-col w-full h-auto items-center align-middle bg-white dark:bg-zinc-800">
             <Link to={"/"} className="flex w-full px-10 py-3 gap-3 align-middle">
                 <img className="size-20 fill-slate-50" src={IconLogo}/>
                 <div className="flex flex-col justify-center gap-1">

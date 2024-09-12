@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import IconLogo from '../assets/Logo.svg';
+import fapesp from "../assets/FAPESP.svg"
+import UFPR from "../assets/uf.svg";
+import Wg from "../assets/wg.svg";
 
 export function Footer() {
     return (
@@ -29,9 +32,12 @@ export function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-col py-4 px-3">
-                        <p className="text-sand-200 font-custom">Sponsors</p>
-                        <div className="flex flex-wrap w-96 py-3 px-3 gap-4 ">
-                          
+                        <p className="text-sand-200 font-custom">SPONSORS</p>
+                        <div className="flex flex-wrap w-96 py-3 px-4 gap-4 ">
+                            <img className="invert opacity-50 w-auto h-9" src={fapesp} alt="fapesp Logo" />
+                            <img className="invert opacity-50 w-auto h-9" src={Wg} alt="WG Logo" />
+                            <img className="invert opacity-50 w-auto h-24" src={UFPR} alt="UFPR Logo" />
+                           
                         </div>
                     </div>
                 </div>
