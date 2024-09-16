@@ -4,6 +4,8 @@ import IconLogo from '../assets/Logo.svg';
 import fapesp from "../assets/FAPESP.svg"
 import UFPR from "../assets/uf.svg";
 import Wg from "../assets/wg.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
@@ -37,17 +39,29 @@ export function Footer() {
                             <img className="invert opacity-50 w-auto h-9" src={fapesp} alt="fapesp Logo" />
                             <img className="invert opacity-50 w-auto h-9" src={Wg} alt="WG Logo" />
                             <img className="invert opacity-50 w-auto h-24" src={UFPR} alt="UFPR Logo" />
-                           
+                        </div>
+                    </div>
+                    <div className="flex flex-col py-4 px-3 gap-3">
+                        <p className="font-custom text-sand-200 ">DEVELOPED BY:</p>
+                        <div className="px-3 flex flex-col">
+                            <p className="font-custom text-lg text-white">Gabriel dos Santos Pereira</p>
+                            <div className="flex flex-row gap-3 justify-end">
+                                <Link to={"https://www.linkedin.com/in/gabriel-dos-santos-pereira/"}><FontAwesomeIcon className="text-white/50 hover:text-white" icon={faLinkedin} size="2x" /></Link>
+                                <Link to={"https://github.com/GabrielPereira146"}><FontAwesomeIcon className="text-white/50 hover:text-white" icon={faGithub} size="2x" /></Link>
+                                
+                            </div>
+                        </div>
+                        <div className="px-3 flex flex-col">
+                            <p className="font-custom text-lg text-white">Leandro Apolinário Bento</p>
+                            <div className="flex flex-row gap-3 justify-end">
+                                <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faLinkedin} size="2x" />
+                                <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faGithub} size="2x" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr />
-            <div className="flex flex-col w-full items-center pt-8 gap-2">
-                <p className="font-custom text-sand-300 text-xl">Developed by</p>
-                <p className="text-white font-custom">Gabriel dos Santos Pereira</p>
-                <p className="text-white font-custom">Leandro Apolinário Bento</p>
-            </div>
+
         </footer>
     )
 }
