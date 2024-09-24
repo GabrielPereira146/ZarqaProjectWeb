@@ -3,12 +3,12 @@ import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  useLocation,
 } from "react-router-dom";
 import "./index.css";
 import Root from "./routes/root";
 import { Home } from "./routes/home";
 import { Project } from "./routes/project";
+import { Data } from "./routes/data";
 
 // Hook para alterar o título da aba dinamicamente
 const usePageTitle = (title) => {
@@ -29,6 +29,12 @@ function ProjectWithTitle() {
   return <Project />;
 }
 
+function DataWithTitle() {
+  usePageTitle('ZARQA Project | Project');
+  return <Data />;
+}
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "project",
         element: <ProjectWithTitle />,
+      },
+      {
+        path: "data",
+        element: <DataWithTitle/>,
       },
     ],
   },

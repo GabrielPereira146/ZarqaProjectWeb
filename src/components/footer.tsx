@@ -9,7 +9,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
-        <footer className="flex flex-col w-full bg-zinc-800 px-16 pt-8">
+        <footer className="flex flex-col w-full bg-zinc-900 px-16 pt-8">
             <div className="flex flex-row w-full px-2">
                 <Link to={"/"} className="flex flex-row gap-1 h-20">
                     <img className="size-12 justify-center my-auto" src={IconLogo} />
@@ -46,9 +46,21 @@ export function Footer() {
                         <div className="px-3 flex flex-col">
                             <p className="font-custom text-lg text-white">Gabriel dos Santos Pereira</p>
                             <div className="flex flex-row gap-3 justify-end">
-                                <Link to={"https://www.linkedin.com/in/gabriel-dos-santos-pereira/"}><FontAwesomeIcon className="text-white/50 hover:text-white" icon={faLinkedin} size="2x" /></Link>
-                                <Link to={"https://github.com/GabrielPereira146"}><FontAwesomeIcon className="text-white/50 hover:text-white" icon={faGithub} size="2x" /></Link>
-                                
+                                <a
+                                    href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faLinkedin} size="2x" />
+                                </a>
+                                <a
+                                    href="https://github.com/GabrielPereira146"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faGithub} size="2x" />
+                                </a>
+
                             </div>
                         </div>
                         <div className="px-3 flex flex-col">
