@@ -66,8 +66,20 @@ export function Footer() {
                         <div className="px-3 flex flex-col">
                             <p className="font-custom text-lg text-white">Leandro Apolinário Bento</p>
                             <div className="flex flex-row gap-3 justify-end">
-                                <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faLinkedin} size="2x" />
-                                <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faGithub} size="2x" />
+                            <a
+                                    href="/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faLinkedin} size="2x" />
+                                </a>
+                                <a
+                                    href="https://github.com/BntLeandro"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FontAwesomeIcon className="text-white/50 hover:text-white" icon={faGithub} size="2x" />
+                                </a>
                             </div>
                         </div>
                     </div>
