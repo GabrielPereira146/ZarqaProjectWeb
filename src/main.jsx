@@ -9,6 +9,7 @@ import Root from "./routes/root";
 import { Home } from "./routes/home";
 import { Project } from "./routes/project";
 import { Data } from "./routes/data";
+import { Team } from "./routes/team";
 
 // Hook para alterar o título da aba dinamicamente
 const usePageTitle = (title) => {
@@ -30,8 +31,13 @@ function ProjectWithTitle() {
 }
 
 function DataWithTitle() {
-  usePageTitle('ZARQA Project | Project');
+  usePageTitle('ZARQA Project | Data');
   return <Data />;
+}
+
+function TeamWithTitle() {
+  usePageTitle('ZARQA Project | Team');
+  return <Team />;
 }
 
 
@@ -51,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "data",
         element: <DataWithTitle/>,
+      },
+      {
+        path: "team",
+        element:<TeamWithTitle/>
       },
     ],
   },

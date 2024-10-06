@@ -8,18 +8,6 @@ import Wg from "../assets/wg.svg";
 
 
 export function Home() {
-
-
-    const [data, setData] = useState([]);
-
-    useEffect(() => {
-        // Chamando a função serverless do Netlify
-        fetch('/.netlify/functions/getGoogleSheet')
-            .then((response) => response.json())
-            .then((data) => setData(data))
-            .catch((error) => console.error('Erro ao buscar dados:', error));
-    }, []);
-    console.log(data);
     return (
         <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800 relative">
             <div className="relative">

@@ -18,7 +18,7 @@ export function Header() {
                 <Link to={"/"} className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Home</Link>
                 <Link to={"project"} className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Project</Link>
                 <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Grants</p>
-                <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Team</p>
+                <Link to={"team"} className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Team</Link>
                 <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Newsletter</p>
                 <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Publications</p>
                 <Link to={"data"} className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">Data</Link>

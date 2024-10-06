@@ -11,10 +11,6 @@ export async function handler() {
       scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     });
 
-
-    console.log('Spreadsheet ID:', process.env.SPREADSHEET_ID); // Para verificar se está sendo lido corretamente
-    console.log('GOOGLE_SERVICE_ACCOUNT_EMAIL:', process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL);
-    console.log('GOOGLE_PRIVATE_KEY:', process.env.GOOGLE_PRIVATE_KEY);
     const sheets = google.sheets({ version: 'v4', auth: serviceAccountAuth });
 
     const response = await sheets.spreadsheets.values.get({
