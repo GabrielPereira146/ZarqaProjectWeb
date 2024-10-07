@@ -40,7 +40,7 @@ export function Team() {
                             </div>
                         ))
                     ) : (
-                        <p className="text-gray-500">Carregando...</p> // Mensagem de carregamento
+                        <p className="text-zinc-500">Carregando...</p> // Mensagem de carregamento
                     )}
                 </div>
             </div>
