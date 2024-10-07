@@ -29,10 +29,10 @@ export function Team() {
                     {data.length > 0 ? ( // Verifica se há dados para renderizar
                         data.map((teamMember) => (
                             <div key={teamMember.name} className="h-80 w-60 flex flex-col rounded-2xl bg-sand-100/50 dark:bg-sand-200">
-                                <img className="w-full h-3/4 rounded-t-2xl" src={teamMember.picture} alt={teamMember.name} />
-                                <div className="flex flex-col justify-center align-middle">
-                                    <h3 className="text-base font-semibold text-center">{teamMember.name}</h3>
-                                    <p className="text-sm font-medium text-black/50 text-center">{teamMember.institution}</p>
+                                <img className="w-full h-3/5 rounded-t-2xl" src={teamMember.picture} alt={teamMember.name} />
+                                <div className="flex flex-col justify-center align-middle py-2">
+                                    <h3 className="text-lg font-semibold text-center">{teamMember.name}</h3>
+                                    <p className="text-base font-medium text-black/50 text-center">{teamMember.institution}</p>
                                 </div>
                             </div>
                         ))
