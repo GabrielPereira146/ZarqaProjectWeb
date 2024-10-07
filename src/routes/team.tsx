@@ -12,13 +12,13 @@ export function Team() {
                 if (!response.ok) throw new Error('Erro ao buscar os dados');
 
                 const jsonData = await response.json();
-                setData(jsonData); 
+                setData(jsonData);
             } catch (error) {
                 console.error('Erro ao buscar dados:', error);
             }
         };
 
-        fetchData(); 
+        fetchData();
     }, []);
 
     return (
@@ -28,14 +28,11 @@ export function Team() {
                 <div className="flex flex-row w-full px-6 py-2 gap-8">
                     {data.length > 0 ? ( // Verifica se há dados para renderizar
                         data.map((teamMember) => (
-                            <div key={teamMember.name} className="relative flex-shrink-0 w-56">
-                                <div className="relative group">
-                                    <img className="w-full h-80 rounded-lg" src={teamMember.picture} alt={teamMember.name} />
-                                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-75 transition duration-300 ease-in-out rounded-lg"></div>
-                                    <div className="absolute inset-0 pl-4 py-2 text-white transform opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out flex flex-col justify-start items-start">
-                                        <h3 className="text-lg font-semibold">{teamMember.name}</h3>
-                                        <p className="text-sm">{teamMember.institution}</p>
-                                    </div>
+                            <div key={teamMember.name} className="h-64 w-48 flex flex-col bg-sand-100/50 dark:bg-sand-200">
+                                <img className="w-full h-3/4 rounded-t-lg" src={teamMember.picture} alt={teamMember.name} />
+                                <div className="flex flex-col justify-center align-middle">
+                                    <h3 className="text-lg font-semibold">{teamMember.name}</h3>
+                                    <p className="text-sm font-medium text-black/50">{teamMember.institution}</p>
                                 </div>
                             </div>
                         ))
