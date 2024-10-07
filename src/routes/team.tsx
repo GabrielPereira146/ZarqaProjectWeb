@@ -28,19 +28,20 @@ export function Team() {
             title="Principal Investigators"
             role="principal"
             data={data}
-            classNameText="dark:text:white"
+            colorClass="bg-sand-100/50 dark:bg-sand-200"
           />
           <TeamSection
             title="Associate Researchers"
             role="researchers"
             data={data}
-            className="bg-zinc-300"
+            className="bg-sand-100/50 dark:bg-sand-200"
+            colorClass="bg-zinc-200"
           />
           <TeamSection
             title="Team Members"
             role="members"
             data={data}
-            className="bg-zinc-300"
+            colorClass="bg-zinc-200"
           />
         </div>
       );
