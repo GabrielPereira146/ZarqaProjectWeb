@@ -6,9 +6,10 @@ interface TeamSectionProps {
   role: string;
   data: TeamData[];
   className?: string;
+  classNameText?:string;
 }
 
-export const TeamSection: React.FC<TeamSectionProps> = ({ title, role, data, className }) => {
+export const TeamSection: React.FC<TeamSectionProps> = ({ title, role, data, className, classNameText }) => {
   return (
     <div className={`flex flex-col pl-16 py-8 gap-4 ${className}`}>
       <p className="font-extrabold text-4xl text-zinc-800 dark:text-white">{title}</p>
@@ -19,9 +20,9 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ title, role, data, cla
             .map((teamMember) => (
               <div key={teamMember.name} className="h-80 w-60 flex flex-col rounded-2xl bg-sand-100/50 dark:bg-sand-200">
                 <img className="w-full h-3/4 rounded-t-2xl" src={teamMember.picture} alt={teamMember.name} />
-                <div className="flex flex-col justify-center align-middle py-4">
+                <div className={`flex flex-col justify-center align-middle py-4 ${classNameText}`}>
                   <h3 className="text-lg font-semibold text-center">{teamMember.name}</h3>
-                  <p className="text-base font-medium text-black/50 text-center">{teamMember.institution}</p>
+                  <p className="text-base font-medium text-current/50 text-center">{teamMember.institution}</p>
                 </div>
               </div>
             ))
