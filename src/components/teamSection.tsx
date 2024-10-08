@@ -22,7 +22,7 @@ export const TeamSection: React.FC<TeamSectionProps> = ({ title, role, data, cla
                 <img className="w-full h-3/4 rounded-t-2xl" src={teamMember.picture} alt={teamMember.name} />
                 <div className="flex flex-col justify-center align-middle py-4">
                   <h3 className="text-lg font-semibold text-center">{teamMember.name}</h3>
-                  <p className="text-base font-medium text-black/50 text-center">{teamMember.institution}</p>
+                  <p className="text-sm font-medium text-black/50 text-center">{teamMember.institution}</p>
                 </div>
               </div>
             ))
