@@ -9,7 +9,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
-        <footer className="flex flex-col w-full sm:bg-zinc-900 xl:px-16 pt-8 px-4 bg-slate-900">
+        <footer className="flex flex-col w-full bg-zinc-900 xl:px-16 pt-8 px-4 ">
             <div className="flex flex-row w-full px-2">
                 <Link to={"/"} className="flex flex-row gap-1 h-20">
                     <img className="size-12 justify-center my-auto" src={IconLogo} />
@@ -21,7 +21,7 @@ export function Footer() {
                 <div className="flex flex-row w-full xl:gap-8 gap-4 lg:justify-center justify-around">
                     <div className="flex flex-col py-4 px-3 gap-3">
                         <p className="text-sand-200 font-custom">CONTACT</p>
-                        <p className="px-3 font-custom text-lg text-white">Leandro.bento@unesp.br</p>
+                        <p className="px-3 font-custom text-lg text-white">@unesp.br</p>
                     </div>
                     <div className="flex flex-col py-4 px-3">
                         <p className="text-sand-200 font-custom">PAGES</p>
