@@ -92,8 +92,8 @@ export function Footer() {
             </div>
 
             {/* Footer Large/Medium/Small */}
-            <div className="hidden sm:flex flex-row md:w-11/12 pl-2 lg:pl-0 justify-between w-full lg:w-full ">
-                <div className="flex 2xl:hidden lg:w-full py-3 xl:pl-20 lg:pl-28 lg:justify-center ml-0 lg:flex-row flex-col">
+            <div className="hidden 2xl:hidden sm:flex flex-row md:w-11/12 pl-2 lg:pl-0 justify-between w-full lg:w-full ">
+                <div className="flex 2xl:hidden lg:w-full py-3 xl:pl-44 lg:pl-52 lg:justify-center ml-0 lg:flex-row flex-col">
                     <p className="text-sand-200 font-custom">SPONSORS</p>
                     <div className="lg:justify-center flex flex-wrap lg:w-auto w-96 px-4 gap-4 ">
                         <img className="invert opacity-50 w-auto h-9" src={fapesp} alt="fapesp Logo" />
@@ -148,7 +148,7 @@ export function Footer() {
             {/* Footer Mobile */}
             <div className="sm:hidden flex  flex-col w-full justify-around">
                 <div className="flex flex-col py-4 px-3 gap-2">
-                    <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">
+                    <p className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">
                         CONTACT
                         <p className="text-sand-200 font-custom">
                             +
@@ -158,7 +158,7 @@ export function Footer() {
                     <p className="hidden px-3 font-custom text-lg text-white">@unesp.br</p>
                 </div>
                 <div className="flex flex-col py-4 px-3">
-                <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">PAGES
+                <p className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">PAGES
                 <p className="text-sand-200 font-custom">
                             +
                         </p>
@@ -173,7 +173,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-col py-4 px-3">
-                <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">SPONSORS
+                <p className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">SPONSORS
                 <p className="text-sand-200 font-custom">
                             +
                         </p>
@@ -185,7 +185,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-col py-4 px-3 gap-3">
-                <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">DEVELOPED BY:
+                <p className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">DEVELOPED BY:
                 <p className="text-sand-200 font-custom">
                             +
                         </p>
