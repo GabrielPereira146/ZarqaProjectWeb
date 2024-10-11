@@ -146,14 +146,24 @@ export function Footer() {
             </div>
 
             {/* Footer Mobile */}
-            <div className="sm:hidden flex  flex-col w-full xl:gap-8 gap-4 lg:justify-center justify-around">
-                <div className="flex flex-col py-4 px-3 gap-3">
-                    <p className="text-sand-200 font-custom">CONTACT</p>
-                    <p className="px-3 font-custom text-lg text-white">@unesp.br</p>
+            <div className="sm:hidden flex  flex-col w-full justify-around">
+                <div className="flex flex-col py-4 px-3 gap-2">
+                    <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">
+                        CONTACT
+                        <p className="text-sand-200 font-custom">
+                            +
+                        </p>
+                    </p>
+                    
+                    <p className="hidden px-3 font-custom text-lg text-white">@unesp.br</p>
                 </div>
                 <div className="flex flex-col py-4 px-3">
-                    <p className="text-sand-200 font-custom">PAGES</p>
-                    <div className="flex flex-wrap w-52 py-3 px-3 gap-4 ">
+                <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">PAGES
+                <p className="text-sand-200 font-custom">
+                            +
+                        </p>
+                </p>
+                    <div className="hidden sm:flex flex-wrap w-52 py-3 px-3 gap-4 ">
                         <Link to={"/project"} className="w-20 text-white font-custom">Project</Link>
                         <Link to={"/project"} className="w-20 text-white font-custom">Grants</Link>
                         <Link to={"/project"} className="w-20 text-white font-custom">Team</Link>
@@ -163,18 +173,26 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-col py-4 px-3">
-                    <p className="text-sand-200 font-custom">SPONSORS</p>
-                    <div className="flex flex-wrap w-96 py-3 px-4 gap-4 ">
+                <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">SPONSORS
+                <p className="text-sand-200 font-custom">
+                            +
+                        </p>
+                </p>
+                    <div className="hidden sm:flex flex-wrap w-56 py-3 px-4 gap-4 ">
                         <img className="invert opacity-50 w-auto h-9" src={fapesp} alt="fapesp Logo" />
                         <img className="invert opacity-50 w-auto h-9" src={Wg} alt="WG Logo" />
                         <img className="invert opacity-50 w-auto h-24" src={UFPR} alt="UFPR Logo" />
                     </div>
                 </div>
                 <div className="flex flex-col py-4 px-3 gap-3">
-                    <p className="font-custom text-sand-200 ">DEVELOPED BY:</p>
-                    <div className="px-3 flex flex-col">
+                <p className="text-sand-200 font-custom hover:bg-zinc-500 flex flex-row justify-between">DEVELOPED BY:
+                <p className="text-sand-200 font-custom">
+                            +
+                        </p>
+                </p>
+                    <div className="hidden px-3 sm:flex flex-col">
                         <p className="font-custom text-lg text-white">Gabriel dos Santos Pereira</p>
-                        <div className="flex flex-row gap-3 justify-end">
+                        <div className="flex flex-row gap-3 justify-start">
                             <a
                                 href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                                 target="_blank"
@@ -192,9 +210,9 @@ export function Footer() {
 
                         </div>
                     </div>
-                    <div className="px-3 flex flex-col">
+                    <div className="hidden px-3 sm:flex flex-col">
                         <p className="font-custom text-lg text-white">Leandro Apolinário Bento</p>
-                        <div className="flex flex-row gap-3 justify-end">
+                        <div className="flex flex-row gap-3 justify-start">
                             <a
                                 href="/"
                                 target="_blank"
