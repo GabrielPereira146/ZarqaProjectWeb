@@ -9,7 +9,7 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export function Footer() {
     return (
-        <footer className="flex flex-col w-full sm:bg-zinc-900 xl:px-16 pt-8 px-4 bg-zinc-600">
+        <footer className="flex flex-col w-full bg-zinc-900 xl:px-16 pt-8 px-4">
 
             <div className="flex sm:flex-row flex-col w-full px-2 ">
                 <Link to={"/"} className="flex flex-row gap-1 h-20 ">
