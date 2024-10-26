@@ -6,11 +6,11 @@ import IconLogo from '../assets/Logo.svg';
 export function Header() {
     return (
         <header className="flex flex-col w-full h-auto items-center align-middle bg-white dark:bg-zinc-800">
-            <Link to={"/"} className="flex w-full px-10 py-3 gap-3 align-middle">
-                <img className="size-20 fill-slate-50" src={IconLogo}/>
+            <Link to={"/"} className="flex w-full lg:px-10 px-4 py-3 gap-3 align-middle">
+                <img className="lg:size-20 fill-slate-50 size-16" src={IconLogo}/>
                 <div className="flex flex-col justify-center gap-1">
-                    <p className="font-custom text-4xl font-semibold italic text-zinc-900 dark:text-white">ZARQA Project</p>
-                    <p className="font-custom text-sm text-sand-200">Paleoenvironment & Prehistory</p>
+                    <p className="font-custom lg:text-4xl text-3xl font-semibold italic text-zinc-900 dark:text-white">ZARQA Project</p>
+                    <p className="font-custom lg:text-sm text-xs text-sand-200">Paleoenvironment & Prehistory</p>
                 </div>
 
             </Link>
