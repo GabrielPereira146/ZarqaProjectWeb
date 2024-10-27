@@ -4,14 +4,14 @@ import { twMerge } from 'tailwind-merge'
 
 interface TeamSectionProps extends ComponentProps<'div'> {
   title: string
-  role: string
+  memberRole: string
   data: TeamData[]
   colorClass?: string
 }
 
 export function TeamSection({
   title,
-  role,
+  memberRole,
   data,
   className,
   colorClass,
@@ -28,7 +28,8 @@ export function TeamSection({
         {data.length > 0 ? (
           data
             .filter(
-              teamMember => teamMember.role.toLowerCase() === role.toLowerCase()
+              teamMember =>
+                teamMember.role.toLowerCase() === memberRole.toLowerCase()
             )
             .map(teamMember => (
               <div

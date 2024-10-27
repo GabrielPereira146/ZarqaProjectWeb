@@ -58,20 +58,20 @@ export function Team() {
     <div className="flex flex-col w-full h-auto justify-center bg-white dark:bg-zinc-800">
       <TeamSection
         title="Principal Investigators"
-        role="principal"
+        memberRole="principal"
         data={data}
         colorClass="bg-sand-100/50 dark:bg-sand-200"
       />
       <TeamSection
         title="Associate Researchers"
-        role="researchers"
+        memberRole="researchers"
         data={data}
         className="bg-sand-100/50 dark:bg-sand-200"
         colorClass="bg-zinc-200"
       />
       <TeamSection
         title="Team Members"
-        role="members"
+        memberRole="members"
         data={data}
         colorClass="bg-sand-100/50 dark:bg-sand-200"
       />
