@@ -35,16 +35,16 @@ export function TeamSection({
               <div
                 key={teamMember.name}
                 className={twMerge(
-                  'aspect-[6/9] flex flex-col rounded-2xl basis-[calc(50%-16px)] md:basis-auto md:max-h-96',
+                  'aspect-[2/3] w-full flex flex-col rounded-2xl basis-[calc(50%-16px)] md:basis-auto md:max-w-60 rounded-t-2xl overflow-hidden',
                   colorClass
                 )}
               >
                 <img
-                  className="w-full h-3/4 rounded-t-2xl"
+                  className="object-cover w-full h-3/4"
                   src={teamMember.picture}
                   alt={teamMember.name}
                 />
-                <div className="flex flex-col justify-center align-middle py-4">
+                <div className="flex flex-col justify-center flex-1 align-middle py-2">
                   <h3 className="text-lg font-semibold text-center">
                     {teamMember.name}
                   </h3>
