@@ -9,12 +9,16 @@ export function Header() {
         to={'/'}
         className="flex w-full lg:px-10 px-4 py-3 gap-3 align-middle"
       >
-        <img className="lg:size-20 fill-slate-50 size-16" src={IconLogo} />
+        <img
+          className="lg:size-20 fill-slate-50 size-16"
+          src={IconLogo}
+          alt=""
+        />
         <div className="flex flex-col justify-center gap-1">
           <p className="font-custom lg:text-4xl text-3xl font-semibold italic text-zinc-900 dark:text-white">
             ZARQA Project
           </p>
-          <p className="font-custom lg:text-sm text-xs text-sand-200">
+          <p className="font-custom lg:text-sm text-xs lg:text-sand-200 md:text-green-700 sm:text-pink-700 text-blue-700">
             Paleoenvironment & Prehistory
           </p>
         </div>
