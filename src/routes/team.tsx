@@ -2,41 +2,42 @@ import React, { useEffect, useState } from 'react'
 import type { TeamData } from '../interface/TeamData' // Importar a interface, se necessário
 import { TeamSection } from '../components/teamSection'
 
-const TEAM_DATA: TeamData[] = [
-  {
-    name: 'João Pedro de Almeida',
-    institution: 'UFPR | Istituto Italiano di Paleontologia Umana',
-    picture:
-      'https://i1.rgstatic.net/ii/profile.image/936740416143360-1600347727717_Q512/Fabio-Parenti-2.jpg',
-    role: 'principal',
-  },
-  {
-    name: 'João Pedro de Almeida',
-    institution: 'UFPR | Istituto ',
-    picture: 'https://igce.rc.unesp.br/Home/pesquisa/unespetro/jeancarlo.jpg',
-    role: 'principal',
-  },
-  {
-    name: 'João Pedro de Almeida',
-    institution: 'UFPR',
-    picture: 'https://avatars.githubusercontent.com/u/105940565?v=4',
-    role: 'principal',
-  },
-  {
-    name: 'João Afonso de Almeida',
-    institution: 'UFPR',
-    picture: 'https://avatars.githubusercontent.com/u/105940565?v=4',
-    role: 'researchers',
-  },
-  {
-    name: 'Leandro Apolinário Bento',
-    institution: 'UFPR',
-    picture: 'https://avatars.githubusercontent.com/u/105940565?v=4',
-    role: 'members',
-  },
-]
+// const TEAM_DATA: TeamData[] = [
+//   {
+//     name: 'João Pedro de Almeida',
+//     institution: 'UFPR | Istituto Italiano di Paleontologia Umana',
+//     picture:
+//       'https://i1.rgstatic.net/ii/profile.image/936740416143360-1600347727717_Q512/Fabio-Parenti-2.jpg',
+//     role: 'principal',
+//   },
+//   {
+//     name: 'João Pedro de Almeida',
+//     institution: 'UFPR | Istituto ',
+//     picture: 'https://igce.rc.unesp.br/Home/pesquisa/unespetro/jeancarlo.jpg',
+//     role: 'principal',
+//   },
+//   {
+//     name: 'João Pedro de Almeida',
+//     institution: 'UFPR',
+//     picture: 'https://avatars.githubusercontent.com/u/105940565?v=4',
+//     role: 'principal',
+//   },
+//   {
+//     name: 'João Afonso de Almeida',
+//     institution: 'UFPR',
+//     picture: 'https://avatars.githubusercontent.com/u/105940565?v=4',
+//     role: 'researchers',
+//   },
+//   {
+//     name: 'Leandro Apolinário Bento',
+//     institution: 'UFPR',
+//     picture: 'https://avatars.githubusercontent.com/u/105940565?v=4',
+//     role: 'members',
+//   },
+// ]
+
 export function Team() {
-  const [data, setData] = useState<TeamData[]>(TEAM_DATA) // Estado para armazenar os dados
+  const [data, setData] = useState<TeamData[]>([]) // Estado para armazenar os dados
 
   useEffect(() => {
     // Chamando a função serverless do Netlify
@@ -52,7 +53,7 @@ export function Team() {
       }
     }
 
-    // fetchData()
+    fetchData()
   }, [])
 
   return (
