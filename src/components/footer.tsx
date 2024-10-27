@@ -4,15 +4,18 @@ import IconLogo from '../assets/Logo.svg'
 import fapesp from '../assets/FAPESP.svg'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { Github, Linkedin } from 'lucide-react'
 
 export function Footer() {
   return (
     <footer className="flex flex-col w-full bg-zinc-900 xl:px-16 pt-8 px-4">
       <div className="flex sm:flex-row flex-col w-full px-2 ">
         <Link to={'/'} className="flex flex-row gap-1 h-20 ">
-          <img className="size-12 justify-center my-auto" src={IconLogo} />
+          <img
+            className="size-12 justify-center my-auto"
+            src={IconLogo}
+            alt=""
+          />
           <div className="flex flex-col justify-center sm:w-52 w-48">
             <p className="font-custom text-2xl font-semibold italic text-sand-200 ">
               ZARQA Project
@@ -84,22 +87,14 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon
-                    className="text-white/50 hover:text-white"
-                    icon={faLinkedin}
-                    size="2x"
-                  />
+                  <Github className="text-white/50 hover:text-white" />
                 </a>
                 <a
                   href="https://github.com/GabrielPereira146"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon
-                    className="text-white/50 hover:text-white"
-                    icon={faGithub}
-                    size="2x"
-                  />
+                  <Linkedin className="text-white/50 hover:text-white" />
                 </a>
               </div>
             </div>
@@ -109,22 +104,14 @@ export function Footer() {
               </p>
               <div className="flex flex-row gap-3 justify-end">
                 <a href="/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon
-                    className="text-white/50 hover:text-white"
-                    icon={faLinkedin}
-                    size="2x"
-                  />
+                  <Github className="text-white/50 hover:text-white" />
                 </a>
                 <a
                   href="https://github.com/BntLeandro"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FontAwesomeIcon
-                    className="text-white/50 hover:text-white"
-                    icon={faGithub}
-                    size="2x"
-                  />
+                  <Linkedin className="text-white/50 hover:text-white" />
                 </a>
               </div>
             </div>
@@ -166,22 +153,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faLinkedin}
-                  size="2x"
-                />
+                <Github className="text-white/50 hover:text-white" />
               </a>
               <a
                 href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faGithub}
-                  size="2x"
-                />
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
           </div>
@@ -191,22 +170,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-end">
               <a href="/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faLinkedin}
-                  size="2x"
-                />
+                <Github className="text-white/50 hover:text-white" />
               </a>
               <a
                 href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faGithub}
-                  size="2x"
-                />
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
           </div>
@@ -286,22 +257,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faLinkedin}
-                  size="2x"
-                />
+                <Github className="text-white/50 hover:text-white" />
               </a>
               <a
                 href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faGithub}
-                  size="2x"
-                />
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
           </p>
@@ -315,22 +278,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faLinkedin}
-                  size="2x"
-                />
+                <Github className="text-white/50 hover:text-white" />
               </a>
               <a
                 href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon
-                  className="text-white/50 hover:text-white"
-                  icon={faGithub}
-                  size="2x"
-                />
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
           </p>
