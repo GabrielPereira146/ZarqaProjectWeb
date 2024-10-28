@@ -4,7 +4,7 @@ import IconLogo from '../assets/Logo.svg'
 import fapesp from '../assets/FAPESP.svg'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
-import { Github, Linkedin } from 'lucide-react'
+import { Github, Linkedin, BadgePlus } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -185,18 +185,19 @@ export function Footer() {
       </div>
 
       {/* Footer Mobile */}
-      <div className="sm:hidden flex  flex-col w-full justify-around">
-        <details className="flex flex-col py-4 px-3 gap-2">
-          <summary className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">
-            CONTACT <p>+</p>
+      <div className="sm:hidden flex  flex-col justify-around -mx-4 w-[calc(100%+32px)]">
+        <details className="flex flex-col py-4 px-3 gap-2 hover:bg-zinc-800">
+          <summary className="text-sand-200 font-custom  flex flex-row justify-between">
+            CONTACT <BadgePlus />
           </summary>
 
           <p className="px-3 font-custom text-lg text-white">@unesp.br</p>
         </details>
-        <details className="flex flex-col py-4 px-3">
-          <summary className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">
+
+        <details className="flex flex-col py-4 px-3  hover:bg-zinc-800">
+          <summary className="text-sand-200 font-custom flex flex-row justify-between">
             PAGES
-            <p>+</p>
+            <BadgePlus />
           </summary>
           <p className="flex flex-col flex-wrap w-52 py-3 px-3 gap-4 ">
             <Link to={'/project'} className="w-20 text-white font-custom">
@@ -219,10 +220,11 @@ export function Footer() {
             </Link>
           </p>
         </details>
-        <details className="flex flex-col py-4 px-3">
-          <summary className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">
+
+        <details className="flex flex-col py-4 px-3  hover:bg-zinc-800">
+          <summary className="text-sand-200 font-custom flex flex-row justify-between">
             SPONSORS
-            <p>+</p>
+            <BadgePlus />
           </summary>
           <p className="flex flex-wrap w-56 py-3 px-4 gap-4 ">
             <img
@@ -242,10 +244,11 @@ export function Footer() {
             />
           </p>
         </details>
-        <details className="flex flex-col py-4 px-3 gap-3">
-          <summary className="text-sand-200 font-custom hover:bg-zinc-800 flex flex-row justify-between">
+
+        <details className="flex flex-col py-4 px-3 gap-3 hover:bg-zinc-800">
+          <summary className="text-sand-200 font-custom flex flex-row justify-between">
             DEVELOPED BY:
-            <p className="text-sand-200 font-custom">+</p>
+            <BadgePlus />
           </summary>
           <p className="px-3 flex flex-col">
             <p className="font-custom text-lg text-white">
