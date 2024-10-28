@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import HomeImage from '../assets/pictures/landscapeHome.svg'
 import Dune from '../assets/duna.svg'
 import fapesp from '../assets/FAPESP.svg'
@@ -23,14 +22,14 @@ export function Home() {
       </div>
       <div className="relative">
         <div
-          className="lg:w-full w-screen bg-transparent bg-cover bg-no-repeat"
+          className="lg:w-full w-full bg-transparent bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url(${Dune})`,
             backgroundPosition: 'center',
             aspectRatio: '8/2',
           }}
         />
-        <div className="absolute -top-4 left-0 w-screen h-full flex justify-around items-center pt-[10%]">
+        <div className="absolute -top-4 left-0 w-full h-full flex justify-around items-center pt-[10%]">
           <img
             className="flex-none w-[20%] max-w-[400px] h-auto aspect-[9/2] object-contain"
             src={fapesp}
