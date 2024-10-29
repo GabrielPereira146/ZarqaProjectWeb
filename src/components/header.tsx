@@ -67,9 +67,12 @@ export function Header() {
         >
           Project
         </Link>
-        <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">
+        <Link
+          to={'grants'}
+          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+        >
           Grants
-        </p>
+        </Link>
         <Link
           to={'team'}
           className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
@@ -115,13 +118,13 @@ export function Header() {
             >
               Project
             </Link>
-            <button
-              type="button"
+            <Link
+              to={'grants'}
               className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Grants
-            </button>
+            </Link>
             <Link
               to={'team'}
               className="w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
