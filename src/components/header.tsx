@@ -142,13 +142,13 @@ export function Header() {
             >
               Newsletter
             </button>
-            <button
-              type="button"
+            <Link
+              to={'publications'}
               className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Publications
-            </button>
+            </Link>
             <Link
               to={'data'}
               className="w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"

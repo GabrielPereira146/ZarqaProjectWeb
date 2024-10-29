@@ -1,4 +1,4 @@
-export function Grants() {
+export function Newsletter() {
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
@@ -13,23 +13,23 @@ export function Grants() {
             </p>
             <div className="w-1/3 flex grid-cols-3 font-semibold justify-between">
               <div className="flex flex-col">
-                <p className="dark:white"> Processo </p>
+                <p> Processo </p>
                 <p className="font-normal text-zinc-500"> 12/22631-2</p>
               </div>
               <div className="flex flex-col">
-                <p className="dark:white"> Modalidade de apoio </p>
+                <p> Modalidade de apoio </p>
                 <p className="font-normal text-zinc-500 ">
                   Regular Research Grants
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="dark:white"> Vigencia </p>
+                <p> Vigencia </p>
                 <p className="font-normal text-zinc-500">
                   July 01, 2014 - June 30, 2016
                 </p>
               </div>
             </div>
-            <div className="w-full line-clamp-3 dark:text-white">
+            <div className="w-full line-clamp-3">
               The hominin evolution was restricted to Africa from approximately
               7 to 2 million years ago. Apparently, the first hominins that left
               the continent belonged to the genus Homo, as indicated by the

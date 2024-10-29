@@ -18,7 +18,7 @@ export function Publications() {
                 <p className="font-normal text-zinc-500 ">20 January 2024</p>
               </div>
             </div>
-            <div className="w-full line-clamp-3">
+            <div className="w-full line-clamp-3 dark:text-white">
               The fluvial Dawqara Formation, upper Zarqa Valley, eastern side of
               Jordan Valley, is chronologically constrained between 2.52 and
               1.98 Ma. Several artifact-bearing outcrops display a core and
