@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import type { TeamData } from '../interface/TeamData' // Importar a interface, se necessário
 import { TeamSection } from '../components/teamSection'
 

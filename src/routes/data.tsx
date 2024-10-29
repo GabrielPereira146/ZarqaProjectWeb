@@ -1,5 +1,3 @@
-import React from 'react'
-
 export function Data() {
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">

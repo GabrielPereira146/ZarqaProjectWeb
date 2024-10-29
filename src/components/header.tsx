@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import IconLogo from '../assets/Logo.svg'
 import { MenuIcon } from 'lucide-react'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -14,9 +14,9 @@ export function Header() {
     setIsMobileMenuOpen(false)
   }
 
-  const openMobileMenu = () => {
-    setIsMobileMenuOpen(true)
-  }
+  // const openMobileMenu = () => {
+  //   setIsMobileMenuOpen(true)
+  // }
 
   // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
