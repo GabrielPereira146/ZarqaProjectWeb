@@ -1,6 +1,7 @@
 import HomeImage from '../assets/pictures/landscapeHome.svg'
 import Dune from '../assets/duna.svg'
 import fapesp from '../assets/FAPESP.svg'
+import unesp from '../assets/UNESP.png'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
 
@@ -36,13 +37,17 @@ export function Home() {
             alt="fapesp Logo"
           />
 
-          <div className="flex flex-col items-center justify-center h-full aspect-[1/4]">
-            <img
-              className="max-w-[300px] w-[400%] h-full object-contain"
-              src={UFPR}
-              alt="UFPR Logo"
-            />
-          </div>
+          <img
+            className="flex-none w-[20%] max-w-[400px] h-auto aspect-[2/1] object-contain"
+            src={unesp}
+            alt="unesp Logo"
+          />
+
+          <img
+            className="flex-none max-w-[300px] w-[15%] h-auto aspect-[1/2] object-contain"
+            src={UFPR}
+            alt="UFPR Logo"
+          />
 
           <img
             className="flex-none w-[20%] max-w-[400px] h-auto aspect-[9/2] object-contain"

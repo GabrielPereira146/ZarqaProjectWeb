@@ -1,7 +1,7 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import IconLogo from '../assets/Logo.svg'
 import fapesp from '../assets/FAPESP.svg'
+import unesp from '../assets/UNESP.png'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
 import { Github, Linkedin, BadgePlus } from 'lucide-react'
@@ -62,6 +62,11 @@ export function Footer() {
                 className="invert opacity-50 w-auto h-9"
                 src={fapesp}
                 alt="fapesp Logo"
+              />
+              <img
+                className="invert opacity-50 w-auto h-14"
+                src={unesp}
+                alt="unesp Logo"
               />
               <img
                 className="invert opacity-50 w-auto h-9"
@@ -128,6 +133,11 @@ export function Footer() {
               className="invert opacity-50 w-auto h-9"
               src={fapesp}
               alt="fapesp Logo"
+            />
+            <img
+              className="invert opacity-50 w-auto h-14"
+              src={unesp}
+              alt="unesp Logo"
             />
             <img
               className="invert opacity-50 w-auto h-9"
@@ -231,6 +241,11 @@ export function Footer() {
               className="invert opacity-50 w-auto h-9"
               src={fapesp}
               alt="fapesp Logo"
+            />
+            <img
+              className="invert opacity-50 w-auto h-14"
+              src={unesp}
+              alt="unesp Logo"
             />
             <img
               className="invert opacity-50 w-auto h-9"
