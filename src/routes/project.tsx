@@ -7,8 +7,8 @@ export function Project() {
       <div className="h-auto w-full gap-8 bg-white dark:bg-zinc-800">
         <div className="flex flex-col pl-16 py-8 gap-4">
           <p className="font-extrabold text-4xl dark:text-white">Description</p>
-          <div className="flex flex-row px-4 gap-12 items-stretch">
-            <p className="my-auto text-xl text-justify dark:text-white basis-2/5">
+          <div className="flex md:flex-row flex-col px-4 gap-12 items-stretch">
+            <p className="my-auto lg:text-xl text-sm text-justify dark:text-white basis-2/5">
               The period from 2.5 to 1 million years ago is a critical time in
               the Earth’s history: it corresponds to a major shift in hominin
               evolution in East Africa, when Australopithecus was replaced by
@@ -30,7 +30,7 @@ export function Project() {
               cooperation with researchers from Jordan.
             </p>
             <img
-              className="rounded-xl object-cover w-3/5 h-[512px] ml-auto my-auto"
+              className="rounded-xl object-cover md:w-3/5 w-full md:min-h-[512px] ml-auto my-auto"
               src={DescIMG}
               alt="LandscapeDescription"
             />
@@ -40,13 +40,13 @@ export function Project() {
       <div className="h-auto w-full gap-8 bg-sand-100/50 dark:bg-sand-200">
         <div className="flex flex-col pl-16 py-8 gap-4">
           <p className="font-extrabold text-4xl dark:text-white">Objective</p>
-          <div className="flex flex-row px-4 gap-12 items-stretch">
+          <div className="flex md:flex-row flex-col-reverse px-4 gap-12 items-stretch">
             <img
-              className="rounded-xl object-cover w-2/5  my-auto"
+              className="rounded-xl object-cover md:w-2/5 w-full md:min-h-[256px] my-auto"
               src={ObjIMG}
               alt="LandscapeObjective"
             />
-            <p className="my-auto text-xl text-justify dark:text-white basis-3/5">
+            <p className="my-auto lg:text-xl text-sm text-justify dark:text-white basis-3/5">
               This project aims to study the paleoenvironmental and cultural
               evolution of the upper Zarqa Valley during the Pleistocene, in
               relation to the Paleolithic sites and exploring factors that
