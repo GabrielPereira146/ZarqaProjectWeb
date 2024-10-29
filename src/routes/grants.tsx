@@ -13,17 +13,17 @@ export function Grants() {
             </p>
             <div className="w-1/3 flex grid-cols-3 font-semibold justify-between">
               <div className="flex flex-col">
-                <p className="dark:white"> Processo </p>
+                <p className="dark:text-white"> Processo </p>
                 <p className="font-normal text-zinc-500"> 12/22631-2</p>
               </div>
               <div className="flex flex-col">
-                <p className="dark:white"> Modalidade de apoio </p>
+                <p className="dark:text-white"> Modalidade de apoio </p>
                 <p className="font-normal text-zinc-500 ">
                   Regular Research Grants
                 </p>
               </div>
               <div className="flex flex-col">
-                <p className="dark:white"> Vigencia </p>
+                <p className="dark:text-white"> Vigencia </p>
                 <p className="font-normal text-zinc-500">
                   July 01, 2014 - June 30, 2016
                 </p>
