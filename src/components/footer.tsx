@@ -38,19 +38,22 @@ export function Footer() {
               <Link to={'/project'} className="w-20 text-white font-custom">
                 Project
               </Link>
-              <Link to={'/project'} className="w-20 text-white font-custom">
+              <Link to={'/grants'} className="w-20 text-white font-custom">
                 Grants
               </Link>
-              <Link to={'/project'} className="w-20 text-white font-custom">
+              <Link to={'/team'} className="w-20 text-white font-custom">
                 Team
               </Link>
               <Link to={'/project'} className="w-20 text-white font-custom">
                 Newsletter
               </Link>
-              <Link to={'/project'} className="w-20 text-white font-custom">
-                Publication
+              <Link
+                to={'/publications'}
+                className="w-20 text-white font-custom"
+              >
+                Publications
               </Link>
-              <Link to={'/project'} className="w-20 text-white font-custom">
+              <Link to={'/data'} className="w-20 text-white font-custom">
                 Data
               </Link>
             </div>
@@ -213,19 +216,19 @@ export function Footer() {
             <Link to={'/project'} className="w-20 text-white font-custom">
               Project
             </Link>
-            <Link to={'/project'} className="w-20 text-white font-custom">
+            <Link to={'/grants'} className="w-20 text-white font-custom">
               Grants
             </Link>
-            <Link to={'/project'} className="w-20 text-white font-custom">
+            <Link to={'/team'} className="w-20 text-white font-custom">
               Team
             </Link>
             <Link to={'/project'} className="w-20 text-white font-custom">
               Newsletter
             </Link>
-            <Link to={'/project'} className="w-20 text-white font-custom">
-              Publication
+            <Link to={'/publications'} className="w-20 text-white font-custom">
+              Publications
             </Link>
-            <Link to={'/project'} className="w-20 text-white font-custom">
+            <Link to={'/data'} className="w-20 text-white font-custom">
               Data
             </Link>
           </p>

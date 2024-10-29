@@ -82,9 +82,12 @@ export function Header() {
         <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">
           Newsletter
         </p>
-        <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">
+        <Link
+          to={'publications'}
+          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+        >
           Publications
-        </p>
+        </Link>
         <Link
           to={'data'}
           className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"

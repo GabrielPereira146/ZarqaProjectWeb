@@ -19,14 +19,12 @@ export function Grants() {
               <div className="flex flex-col">
                 <p> Modalidade de apoio </p>
                 <p className="font-normal text-zinc-500 ">
-                  {' '}
                   Regular Research Grants
                 </p>
               </div>
               <div className="flex flex-col">
                 <p> Vigencia </p>
                 <p className="font-normal text-zinc-500">
-                  {' '}
                   July 01, 2014 - June 30, 2016
                 </p>
               </div>
