@@ -3,7 +3,7 @@ import { getGoogleSheetData } from './getGoogleSheet'
 
 export async function handler() {
   try {
-    const rows = await getGoogleSheetData('Team!A1:D10') // Chame a função com o range desejado
+    const rows = await getGoogleSheetData('Team!A1:D20') // Chame a função com o range desejado
     const formattedData = formatTeamData(rows)
 
     return {
