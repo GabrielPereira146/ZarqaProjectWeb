@@ -2,67 +2,88 @@ export function Newsletter() {
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
-        <div className="flex flex-col px-16 py-4 md:py-8 gap-4 h-full">
-          <p className="font-extrabold text-xl md:text-4xl dark:text-white">
-            Grants
-          </p>
-          <div className="flex flex-col border-2 border-sand-200 rounded-md p-3 gap-2">
-            <p className="text-2xl font-semibold dark:text-white my-4">
-              Hominin biocultural evolution at Zarqa river valley, Jordan: a
-              paleoanthropological approach
+        <div className="flex flex-col py-4 md:py-8 gap-y-6 h-full">
+          <div className="flex flex-col pl-16 py-4  gap-y-4">
+            <p className="font-extrabold text-xl md:text-4xl dark:text-white">
+              News
             </p>
-            <div className="w-1/3 flex grid-cols-3 font-semibold justify-between">
-              <div className="flex flex-col">
-                <p> Processo </p>
-                <p className="font-normal text-zinc-500"> 12/22631-2</p>
-              </div>
-              <div className="flex flex-col">
-                <p> Modalidade de apoio </p>
-                <p className="font-normal text-zinc-500 ">
-                  Regular Research Grants
+            <div className="w-full grid grid-cols-6 gap-6 h-96 font-semibold px-8">
+              <div className="flex flex-col border-2 border-sand-100 rounded-md justify-between ">
+                <div>
+                  <img
+                    className="w-full object-cover h-44 rounded-t-md"
+                    src="https://unicamp.br/unicamp/sites/default/files/inline-images/Relatos_Jornada_202310123_Achado_Jordania_Interna_1.jpg"
+                    alt="Journals"
+                  />
+                  <p className="px-2 font-semibold text-sand-200 mb-10 line-clamp-5">
+                    Climate may have facilitated migration of hominids from
+                    Africa to Asia
+                  </p>
+                </div>
+                <p className="px-2 font-normal text-zinc-500 dark:text-white text-sm">
+                  23/10/2023
                 </p>
+
+                <a
+                  className="px-2 text-end font-semibold text-sand-200 text-sm"
+                  href="https://unicamp.br/unicamp/noticias/2023/10/23/clima-pode-ter-facilitado-migracao-de-homininios-da-africa-para-asia/"
+                >
+                  Learn More
+                </a>
               </div>
-              <div className="flex flex-col">
-                <p> Vigencia </p>
-                <p className="font-normal text-zinc-500">
-                  July 01, 2014 - June 30, 2016
+              <div className="flex flex-col border-2 border-sand-100 rounded-md justify-between ">
+                <div>
+                  <img
+                    className="w-full object-cover h-44 rounded-t-md"
+                    src="https://ogimg.infoglobo.com.br/in/23785352-38a-4cb/FT1086A/Walter-Neves.png"
+                    alt="Journals"
+                  />
+                  <p className="px-2 font-semibold text-sand-200 mb-10 line-clamp-5">
+                    Descoberta brasileira pode mudar a história evolutiva dos
+                    humanos no planeta
+                  </p>
+                </div>
+                <p className="px-2 font-normal text-zinc-500 dark:text-white text-sm">
+                  05/07/2019
                 </p>
+
+                <a
+                  className="px-2 text-end font-semibold text-sand-200 text-sm"
+                  href="https://oglobo.globo.com/brasil/descoberta-brasileira-pode-mudar-historia-evolutiva-dos-humanos-no-planeta-23785355"
+                >
+                  Learn More
+                </a>
               </div>
             </div>
-            <div className="w-full line-clamp-3">
-              The hominin evolution was restricted to Africa from approximately
-              7 to 2 million years ago. Apparently, the first hominins that left
-              the continent belonged to the genus Homo, as indicated by the
-              findings in Dmanisi, Georgia, dated to 1.8 million years. The
-              Levant must have played an important role in this expansion from
-              Africa to the Caucasus. In the long term, the main goal of this
-              project is to show that the Zarqa River Valley was a major
-              corridor to the expansion of the genus Homo from Africa into Asia,
-              inserting the Pleistocene deposits of central Jordan in the
-              scientific debate about the first peopling of the Old World. For
-              the first two years, subject of this request , the goals are more
-              modest, being summarized as follows : 1. Intensification of
-              geological, archaeological, and paleontological surveys at the
-              Upper Zarqa River Valley; 2. Technical- typological
-              characterization of Pleistocene industries of the Upper Zarqa
-              River Valley, with special emphasis on those of the Lower
-              Paleolithic; 3. Establishment of a reliable chronology for the
-              distinct hominin occupations of the eastern bank of the Jordan
-              rift; 4. Geological, archaeological, and paleontological surveys
-              at the Middle and Lower Zarqa River Valleys (virtually unknown to
-              date). 5. Instruction and training of Brazilian students in an
-              international research environment; 6. Brazilian insertion in the
-              restricted and selected community that develops
-              paleoanthropological research in the Old World. (AU)
+          </div>
+          <div className="flex flex-col pl-16 py-4 bg-sand-100/50 gap-y-4">
+            <p className="font-extrabold text-xl md:text-4xl dark:text-white">
+              Videos
+            </p>
+            <div className="w-full grid grid-cols-6 gap-6 h-96 font-semibold px-8">
+              <div className="flex flex-col border-2 border-white rounded-md justify-between ">
+                <div>
+                  <img
+                    className="w-full object-cover h-44 rounded-t-md"
+                    src="https://i.ytimg.com/vi/c4kwbyOYLlM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCux4hkYcpavkufGybhOkm9H4cL0g"
+                    alt="Video"
+                  />
+                  <p className="px-2 font-semibold text-zinc-800 mb-10 line-clamp-5">
+                    Repórter Eco | 08/03/2020
+                  </p>
+                </div>
+                <p className="px-2 font-normal text-zinc-500 dark:text-white text-sm">
+                  08/03/2020
+                </p>
+
+                <a
+                  className="px-2 text-end font-semibold text-zinc-800 text-sm"
+                  href="https://www.youtube.com/watch?v=c4kwbyOYLlM"
+                >
+                  View Video
+                </a>
+              </div>
             </div>
-            <button
-              type="button"
-              className="text-sand-200 border-2 border-sand-200 rounded-full px-8 py-2 w-fit"
-            >
-              <a href="https://bv.fapesp.br/en/auxilios/85023/hominin-biocultural-evolution-at-zarqa-river-valley-jordan-a-paleoanthropological-approach/">
-                About
-              </a>
-            </button>
           </div>
           <p className="text-2xl font-semibold text-zinc-500 dark:text-white my-4">
             Em Desenvolvimento...

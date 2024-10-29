@@ -44,7 +44,7 @@ export function Footer() {
               <Link to={'/team'} className="w-20 text-white font-custom">
                 Team
               </Link>
-              <Link to={'/project'} className="w-20 text-white font-custom">
+              <Link to={'/newsletter'} className="w-20 text-white font-custom">
                 Newsletter
               </Link>
               <Link
@@ -222,7 +222,7 @@ export function Footer() {
             <Link to={'/team'} className="w-20 text-white font-custom">
               Team
             </Link>
-            <Link to={'/project'} className="w-20 text-white font-custom">
+            <Link to={'/newsletter'} className="w-20 text-white font-custom">
               Newsletter
             </Link>
             <Link to={'/publications'} className="w-20 text-white font-custom">

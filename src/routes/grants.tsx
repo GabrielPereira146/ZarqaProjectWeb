@@ -11,7 +11,7 @@ export function Grants() {
               Hominin biocultural evolution at Zarqa river valley, Jordan: a
               paleoanthropological approach
             </p>
-            <div className="w-1/3 flex grid-cols-3 font-semibold justify-between">
+            <div className="w-1/3 flex font-semibold justify-between">
               <div className="flex flex-col">
                 <p className="dark:text-white"> Processo </p>
                 <p className="font-normal text-zinc-500"> 12/22631-2</p>

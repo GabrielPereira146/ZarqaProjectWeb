@@ -47,7 +47,7 @@ export function Header() {
           <p className="font-custom lg:text-4xl text-3xl font-semibold italic text-zinc-900 dark:text-white">
             ZARQA Project
           </p>
-          <p className="font-custom lg:text-sm text-xs lg:text-sand-200">
+          <p className="font-custom lg:text-sm text-xs text-sand-200">
             Paleoenvironment & Prehistory
           </p>
         </div>
@@ -79,9 +79,12 @@ export function Header() {
         >
           Team
         </Link>
-        <p className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50">
+        <Link
+          to={'newsletter'}
+          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+        >
           Newsletter
-        </p>
+        </Link>
         <Link
           to={'publications'}
           className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
@@ -135,13 +138,13 @@ export function Header() {
             >
               Team
             </Link>
-            <button
-              type="button"
+            <Link
+              to={'newsletter'}
               className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Newsletter
-            </button>
+            </Link>
             <Link
               to={'publications'}
               className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"

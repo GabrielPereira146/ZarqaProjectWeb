@@ -10,6 +10,7 @@ import { Data } from './routes/data'
 import { Team } from './routes/team'
 import { Grants } from './routes/grants'
 import { Publications } from './routes/publications'
+import { Newsletter } from './routes/newsletter'
 
 // Hook para alterar o título da aba dinamicamente
 const usePageTitle = (title: string) => {
@@ -50,6 +51,11 @@ function PublicationsWithTitle() {
   return <Publications />
 }
 
+function NewsletterWithTitle() {
+  usePageTitle('ZARQA Project | Newsletter')
+  return <Newsletter />
+}
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -78,6 +84,10 @@ const router = createBrowserRouter([
       {
         path: 'publications',
         element: <PublicationsWithTitle />,
+      },
+      {
+        path: 'newsletter',
+        element: <NewsletterWithTitle />,
       },
     ],
   },
