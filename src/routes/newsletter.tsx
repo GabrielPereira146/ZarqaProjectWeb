@@ -91,7 +91,7 @@ export function Newsletter() {
               </div>
             </div>
           </div>
-          <p className="text-2xl font-semibold text-zinc-500 dark:text-white px-16 my-4">
+          <p className="text-2xl font-semibold text-zinc-500 dark:text-white md:px-16 px-4 my-4">
             Developing...
           </p>
         </div>
