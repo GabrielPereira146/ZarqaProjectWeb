@@ -2,16 +2,16 @@ export function Grants() {
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
-        <div className="flex flex-col px-16 py-4 md:py-8 gap-4 h-full">
+        <div className="flex flex-col md:px-16 px-4 py-4 md:py-8 gap-4 h-full">
           <p className="font-extrabold text-xl md:text-4xl dark:text-white">
             Grants
           </p>
-          <div className="flex flex-col border-2 border-sand-200 rounded-md p-3 gap-2">
-            <p className="text-2xl font-semibold dark:text-white my-4">
+          <div className="flex flex-col border-2 border-sand-200 rounded-md p-3 gap-2 ">
+            <p className="font-semibold dark:text-white my-4 md:text-2xl text-lg">
               Hominin biocultural evolution at Zarqa river valley, Jordan: a
               paleoanthropological approach
             </p>
-            <div className="w-1/3 flex font-semibold justify-between">
+            <div className=" flex font-semibold justify-between 2xl:w-2/5 lg:w-3/5 md:w-5/6 w-full md:text-base text-xs">
               <div className="flex flex-col">
                 <p className="dark:text-white"> Processo </p>
                 <p className="font-normal text-zinc-500"> 12/22631-2</p>
@@ -29,7 +29,7 @@ export function Grants() {
                 </p>
               </div>
             </div>
-            <div className="w-full line-clamp-3 dark:text-white">
+            <div className="w-full line-clamp-3 dark:text-white md:text-base text-xs">
               The hominin evolution was restricted to Africa from approximately
               7 to 2 million years ago. Apparently, the first hominins that left
               the continent belonged to the genus Homo, as indicated by the
@@ -57,15 +57,19 @@ export function Grants() {
             </div>
             <button
               type="button"
-              className="text-sand-200 border-2 border-sand-200 rounded-full px-8 py-2 w-fit"
+              className="text-sand-200 border-2 border-sand-200 rounded-full px-8 py-2 w-fit md:text-base text-xs"
             >
-              <a href="https://bv.fapesp.br/en/auxilios/85023/hominin-biocultural-evolution-at-zarqa-river-valley-jordan-a-paleoanthropological-approach/">
+              <a
+                href="https://bv.fapesp.br/en/auxilios/85023/hominin-biocultural-evolution-at-zarqa-river-valley-jordan-a-paleoanthropological-approach/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 About
               </a>
             </button>
           </div>
           <p className="text-2xl font-semibold text-zinc-500 dark:text-white my-4">
-            Em Desenvolvimento...
+            Developing...
           </p>
         </div>
       </div>

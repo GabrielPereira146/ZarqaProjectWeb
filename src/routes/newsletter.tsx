@@ -7,7 +7,7 @@ export function Newsletter() {
             <p className="font-extrabold text-xl md:text-4xl dark:text-white">
               News
             </p>
-            <div className="w-full grid grid-cols-6 gap-6 h-96 font-semibold px-8">
+            <div className="w-full grid gap-6 h-96 font-semibold px-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               <div className="flex flex-col border-2 border-sand-100 rounded-md justify-between ">
                 <div>
                   <img
@@ -16,8 +16,8 @@ export function Newsletter() {
                     alt="Journals"
                   />
                   <p className="px-2 font-semibold text-sand-200 mb-10 line-clamp-5">
-                    Climate may have facilitated migration of hominids from
-                    Africa to Asia
+                    Clima pode ter facilitado migração de hominínios da África
+                    para a Ásia
                   </p>
                 </div>
                 <p className="px-2 font-normal text-zinc-500 dark:text-white text-sm">
@@ -27,6 +27,8 @@ export function Newsletter() {
                 <a
                   className="px-2 text-end font-semibold text-sand-200 text-sm"
                   href="https://unicamp.br/unicamp/noticias/2023/10/23/clima-pode-ter-facilitado-migracao-de-homininios-da-africa-para-asia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Learn More
                 </a>
@@ -50,6 +52,8 @@ export function Newsletter() {
                 <a
                   className="px-2 text-end font-semibold text-sand-200 text-sm"
                   href="https://oglobo.globo.com/brasil/descoberta-brasileira-pode-mudar-historia-evolutiva-dos-humanos-no-planeta-23785355"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Learn More
                 </a>
@@ -60,7 +64,7 @@ export function Newsletter() {
             <p className="font-extrabold text-xl md:text-4xl dark:text-white">
               Videos
             </p>
-            <div className="w-full grid grid-cols-6 gap-6 h-96 font-semibold px-8">
+            <div className="w-full grid  gap-6 h-96 font-semibold px-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               <div className="flex flex-col border-2 border-white rounded-md justify-between ">
                 <div>
                   <img
@@ -79,6 +83,8 @@ export function Newsletter() {
                 <a
                   className="px-2 text-end font-semibold text-zinc-800 text-sm"
                   href="https://www.youtube.com/watch?v=c4kwbyOYLlM"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Video
                 </a>
@@ -86,7 +92,7 @@ export function Newsletter() {
             </div>
           </div>
           <p className="text-2xl font-semibold text-zinc-500 dark:text-white px-16 my-4">
-            Em Desenvolvimento...
+            Developing...
           </p>
         </div>
       </div>

@@ -57,43 +57,43 @@ export function Header() {
       <nav className="hidden md:flex flex-row h-10 w-full bg-sand-100 items-center align-middle justify-center">
         <Link
           to={'/'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Home
         </Link>
         <Link
           to={'project'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Project
         </Link>
         <Link
           to={'grants'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Grants
         </Link>
         <Link
           to={'team'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Team
         </Link>
         <Link
           to={'newsletter'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Newsletter
         </Link>
         <Link
           to={'publications'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Publications
         </Link>
         <Link
           to={'data'}
-          className="h-full w-32 py-2 font-medium text-zinc-900 text-center hover:bg-sand-200/50"
+          className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
           Data
         </Link>
@@ -112,49 +112,49 @@ export function Header() {
           <nav className="absolute top-10 left-0 w-full h-auto bg-amber-100 opacity-90 z-10 flex flex-col py-3">
             <Link
               to={'/'}
-              className="w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Home
             </Link>
             <Link
               to={'project'}
-              className="w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Project
             </Link>
             <Link
               to={'grants'}
-              className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Grants
             </Link>
             <Link
               to={'team'}
-              className="w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Team
             </Link>
             <Link
               to={'newsletter'}
-              className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Newsletter
             </Link>
             <Link
               to={'publications'}
-              className="text-left w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Publications
             </Link>
             <Link
               to={'data'}
-              className="w-full px-6 py-2 font-medium text-zinc-900 hover:bg-sand-200/50"
+              className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
               Data
