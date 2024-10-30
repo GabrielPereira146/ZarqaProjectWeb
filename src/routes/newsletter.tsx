@@ -3,11 +3,11 @@ export function Newsletter() {
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
         <div className="flex flex-col py-4 md:py-8 gap-y-6 h-full">
-          <div className="flex flex-col pl-16 py-4  gap-y-4">
+          <div className="flex flex-col md:px-16 px-4 py-4  gap-y-4">
             <p className="font-extrabold text-xl md:text-4xl dark:text-white">
               News
             </p>
-            <div className="w-full grid gap-6 h-96 font-semibold px-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+            <div className="w-full grid gap-6 h-96 font-semibold md:px-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               <div className="flex flex-col border-2 border-sand-100 rounded-md justify-between ">
                 <div>
                   <img
@@ -60,11 +60,11 @@ export function Newsletter() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col pl-16 py-4 bg-sand-100/50 gap-y-4">
+          <div className="flex flex-col md:px-16 px-4 py-4 bg-sand-100/50 gap-y-4">
             <p className="font-extrabold text-xl md:text-4xl dark:text-white">
               Videos
             </p>
-            <div className="w-full grid  gap-6 h-96 font-semibold px-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+            <div className="w-full grid  gap-6 h-96 font-semibold md:px-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
               <div className="flex flex-col border-2 border-white rounded-md justify-between ">
                 <div>
                   <img
