@@ -4,9 +4,17 @@ import fapesp from '../assets/FAPESP.svg'
 import unesp from '../assets/UNESP.png'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
-import { Github, Linkedin, BadgePlus } from 'lucide-react'
+import { Github, Linkedin, BadgePlus, BadgeMinus } from 'lucide-react'
+import { useState } from 'react'
 
 export function Footer() {
+  const [details, setDetails] = useState({
+    contact: false,
+    pages: false,
+    sponsors: false,
+    developed: false,
+  })
+
   return (
     <footer className="flex flex-col w-full bg-zinc-900 xl:px-16 pt-8 px-4">
       <div className="flex sm:flex-row flex-col w-full px-2 ">
@@ -199,18 +207,27 @@ export function Footer() {
 
       {/* Footer Mobile */}
       <div className="sm:hidden flex  flex-col justify-around -mx-4 w-[calc(100%+32px)]">
-        <details className="flex flex-col py-4 px-3 gap-2 hover:bg-zinc-800">
+        <details
+          open={details.contact}
+          onToggle={() => setDetails({ ...details, contact: !details.contact })}
+          className="flex flex-col py-4 px-3 gap-2 hover:bg-zinc-800"
+        >
           <summary className="text-sand-200 font-custom  flex flex-row justify-between">
-            CONTACT <BadgePlus />
+            <span>CONTACT</span>
+            {details.contact ? <BadgeMinus /> : <BadgePlus />}
           </summary>
 
           <p className="px-3 font-custom text-lg text-white">@unesp.br</p>
         </details>
 
-        <details className="flex flex-col py-4 px-3  hover:bg-zinc-800">
+        <details
+          open={details.pages}
+          onToggle={() => setDetails({ ...details, pages: !details.pages })}
+          className="flex flex-col py-4 px-3  hover:bg-zinc-800"
+        >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
-            PAGES
-            <BadgePlus />
+            <span>PAGES</span>
+            {details.pages ? <BadgeMinus /> : <BadgePlus />}
           </summary>
           <p className="flex flex-col flex-wrap w-52 py-3 px-3 gap-4 ">
             <Link to={'/project'} className="w-20 text-white font-custom">
@@ -234,10 +251,16 @@ export function Footer() {
           </p>
         </details>
 
-        <details className="flex flex-col py-4 px-3  hover:bg-zinc-800">
+        <details
+          open={details.sponsors}
+          onToggle={() =>
+            setDetails({ ...details, sponsors: !details.sponsors })
+          }
+          className="flex flex-col py-4 px-3  hover:bg-zinc-800"
+        >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
-            SPONSORS
-            <BadgePlus />
+            <span>SPONSORS</span>
+            {details.sponsors ? <BadgeMinus /> : <BadgePlus />}
           </summary>
           <p className="flex flex-wrap w-56 py-3 px-4 gap-4 ">
             <img
@@ -263,10 +286,16 @@ export function Footer() {
           </p>
         </details>
 
-        <details className="flex flex-col py-4 px-3 gap-3 hover:bg-zinc-800">
+        <details
+          open={details.developed}
+          onToggle={() =>
+            setDetails({ ...details, developed: !details.developed })
+          }
+          className="flex flex-col py-4 px-3 gap-3 hover:bg-zinc-800"
+        >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
-            DEVELOPED BY:
-            <BadgePlus />
+            <span> DEVELOPED BY:</span>
+            {details.developed ? <BadgeMinus /> : <BadgePlus />}
           </summary>
           <p className="px-3 flex flex-col">
             <p className="font-custom text-lg text-white">
