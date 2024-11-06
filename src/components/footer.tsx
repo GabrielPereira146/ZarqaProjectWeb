@@ -103,14 +103,14 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Github className="text-white/50 hover:text-white" />
+                  <Linkedin className="text-white/50 hover:text-white" />
                 </a>
                 <a
                   href="https://github.com/GabrielPereira146"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="text-white/50 hover:text-white" />
+                  <Github className="text-white/50 hover:text-white" />
                 </a>
               </div>
             </div>
@@ -120,14 +120,14 @@ export function Footer() {
               </p>
               <div className="flex flex-row gap-3 justify-end">
                 <a href="/" target="_blank" rel="noopener noreferrer">
-                  <Github className="text-white/50 hover:text-white" />
+                  <Linkedin className="text-white/50 hover:text-white" />
                 </a>
                 <a
                   href="https://github.com/BntLeandro"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Linkedin className="text-white/50 hover:text-white" />
+                  <Github className="text-white/50 hover:text-white" />
                 </a>
               </div>
             </div>
@@ -174,14 +174,14 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Github className="text-white/50 hover:text-white" />
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
               <a
                 href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin className="text-white/50 hover:text-white" />
+                <Github className="text-white/50 hover:text-white" />
               </a>
             </div>
           </div>
@@ -191,14 +191,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-end">
               <a href="/" target="_blank" rel="noopener noreferrer">
-                <Github className="text-white/50 hover:text-white" />
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
               <a
                 href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Linkedin className="text-white/50 hover:text-white" />
+                <Github className="text-white/50 hover:text-white" />
               </a>
             </div>
           </div>
