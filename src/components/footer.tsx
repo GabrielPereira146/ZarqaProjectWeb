@@ -99,18 +99,18 @@ export function Footer() {
               </p>
               <div className="flex flex-row gap-3 justify-end">
                 <a
-                  href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Linkedin className="text-white/50 hover:text-white" />
-                </a>
-                <a
                   href="https://github.com/GabrielPereira146"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github className="text-white/50 hover:text-white" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="text-white/50 hover:text-white" />
                 </a>
               </div>
             </div>
@@ -119,15 +119,15 @@ export function Footer() {
                 Leandro Apolinário Bento
               </p>
               <div className="flex flex-row gap-3 justify-end">
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="text-white/50 hover:text-white" />
-                </a>
                 <a
                   href="https://github.com/BntLeandro"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github className="text-white/50 hover:text-white" />
+                </a>
+                <a href="/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="text-white/50 hover:text-white" />
                 </a>
               </div>
             </div>
@@ -170,18 +170,18 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-end">
               <a
-                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin className="text-white/50 hover:text-white" />
-              </a>
-              <a
                 href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
           </div>
@@ -190,15 +190,15 @@ export function Footer() {
               Leandro Apolinário Bento
             </p>
             <div className="flex flex-row gap-3 justify-end">
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="text-white/50 hover:text-white" />
-              </a>
               <a
                 href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
           </div>
@@ -303,14 +303,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-start">
               <a
-                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
               </a>
               <a
-                href="https://github.com/GabrielPereira146"
+                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -324,14 +324,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-start">
               <a
-                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
               </a>
               <a
-                href="https://github.com/BntLeandro"
+                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
