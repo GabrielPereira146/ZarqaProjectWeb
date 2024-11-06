@@ -1,7 +1,7 @@
 import HomeImage from '../assets/pictures/landscapeHome.svg'
 import Dune from '../assets/duna.svg'
 import fapesp from '../assets/FAPESP.svg'
-import unesp from '../assets/UNESP.png'
+import unesp from '../assets/UNESP.svg'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
 
