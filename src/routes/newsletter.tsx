@@ -1,9 +1,33 @@
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { NewsCard } from "../components/newsCard";
+import { useNewsData } from "../hooks/useNewsData";
+import { Loading } from "../components/loading";
+import { ErrorPage } from "../components/error";
 
 export function Newsletter() {
+
+
+  const { data, isLoading, isError, error } = useNewsData();
+
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  if (isLoading) {
+    return (
+      <Loading />
+    );
+  }
+  if (isError) {
+    return (
+      <ErrorPage erro={error.message} />
+    );
+  }
+
+  // Group members by role for display
+  const News = data.filter(d => d.type.toLowerCase() === "news");
+  const Reportage = data.filter(d => d.type.toLowerCase() === "reportage");
+  const Videos = data.filter(d => d.type.toLowerCase() === "videos");
+  const Podcast = data.filter(d => d.type.toLowerCase() === "podcast");
 
   const scrollLeft = () => {
     if (scrollRef.current) {
@@ -18,6 +42,7 @@ export function Newsletter() {
   };
 
   return (
+
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
         <div className="flex flex-col py-4 md:py-8 gap-y-6 h-full">
@@ -47,54 +72,14 @@ export function Newsletter() {
                 ref={scrollRef}
                 className="flex overflow-x-auto scroll-smooth space-x-6 w-full gap-4 h-96 font-semibold md:px-8 px-4 py-6"
               >
-                <NewsCard
-                  title="Clima pode ter facilitado migração de hominínios da África para a Ásia"
-                  date="23/10/2023"
-                  imageUrl="https://unicamp.br/unicamp/sites/default/files/inline-images/Relatos_Jornada_202310123_Achado_Jordania_Interna_1.jpg"
-                  link="https://unicamp.br/unicamp/noticias/2023/10/23/clima-pode-ter-facilitado-migracao-de-homininios-da-africa-para-asia/"
-                />
-                <NewsCard
-                  title="Clima pode ter facilitado migração de hominínios da África para a Ásia"
-                  date="23/10/2023"
-                  imageUrl="https://unicamp.br/unicamp/sites/default/files/inline-images/Relatos_Jornada_202310123_Achado_Jordania_Interna_1.jpg"
-                  link="https://unicamp.br/unicamp/noticias/2023/10/23/clima-pode-ter-facilitado-migracao-de-homininios-da-africa-para-asia/"
-                />
-                <NewsCard
-                  title="Clima pode ter facilitado migração de hominínios da África para a Ásia"
-                  date="23/10/2023"
-                  imageUrl="https://unicamp.br/unicamp/sites/default/files/inline-images/Relatos_Jornada_202310123_Achado_Jordania_Interna_1.jpg"
-                  link="https://unicamp.br/unicamp/noticias/2023/10/23/clima-pode-ter-facilitado-migracao-de-homininios-da-africa-para-asia/"
-                />
-                <NewsCard
-                  title="Clima pode ter facilitado migração de hominínios da África para a Ásia"
-                  date="23/10/2023"
-                  imageUrl="https://unicamp.br/unicamp/sites/default/files/inline-images/Relatos_Jornada_202310123_Achado_Jordania_Interna_1.jpg"
-                  link="https://unicamp.br/unicamp/noticias/2023/10/23/clima-pode-ter-facilitado-migracao-de-homininios-da-africa-para-asia/"
-                />
-                <NewsCard
-                  title="Descoberta brasileira pode mudar a história evolutiva dos humanos no planeta"
-                  date="05/07/2019"
-                  imageUrl="https://ogimg.infoglobo.com.br/in/23785352-38a-4cb/FT1086A/Walter-Neves.png"
-                  link="https://oglobo.globo.com/brasil/descoberta-brasileira-pode-mudar-historia-evolutiva-dos-humanos-no-planeta-23785355"
-                />
-                    <NewsCard
-                  title="Descoberta brasileira pode mudar a história evolutiva dos humanos no planeta"
-                  date="05/07/2019"
-                  imageUrl="https://ogimg.infoglobo.com.br/in/23785352-38a-4cb/FT1086A/Walter-Neves.png"
-                  link="https://oglobo.globo.com/brasil/descoberta-brasileira-pode-mudar-historia-evolutiva-dos-humanos-no-planeta-23785355"
-                />
-                    <NewsCard
-                  title="Descoberta brasileira pode mudar a história evolutiva dos humanos no planeta"
-                  date="05/07/2019"
-                  imageUrl="https://ogimg.infoglobo.com.br/in/23785352-38a-4cb/FT1086A/Walter-Neves.png"
-                  link="https://oglobo.globo.com/brasil/descoberta-brasileira-pode-mudar-historia-evolutiva-dos-humanos-no-planeta-23785355"
-                />
-                    <NewsCard
-                  title="Descoberta brasileira pode mudar a história evolutiva dos humanos no planeta"
-                  date="05/07/2019"
-                  imageUrl="https://ogimg.infoglobo.com.br/in/23785352-38a-4cb/FT1086A/Walter-Neves.png"
-                  link="https://oglobo.globo.com/brasil/descoberta-brasileira-pode-mudar-historia-evolutiva-dos-humanos-no-planeta-23785355"
-                />
+                {News?.map((newsData) => (
+                  <NewsCard
+                    key={newsData.id}
+                    title={newsData.title}
+                    link={newsData.link}
+                    date={newsData.datePublication}
+                    imageUrl={newsData.cover} />
+                ))}
               </div>
             </div>
 

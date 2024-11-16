@@ -4,7 +4,7 @@ import fapesp from '../assets/FAPESP.svg'
 import unesp from '../assets/UNESP.svg'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
-import { Github, Linkedin, BadgePlus, BadgeMinus } from 'lucide-react'
+import { Github, Linkedin, Plus, Minus } from 'lucide-react'
 import { useState } from 'react'
 
 export function Footer() {
@@ -214,7 +214,7 @@ export function Footer() {
         >
           <summary className="text-sand-200 font-custom  flex flex-row justify-between">
             <span>CONTACT</span>
-            {details.contact ? <BadgeMinus /> : <BadgePlus />}
+            {details.contact ? <Minus /> : <Plus />}
           </summary>
 
           <p className="px-3 font-custom text-lg text-white">@unesp.br</p>
@@ -227,7 +227,7 @@ export function Footer() {
         >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
             <span>PAGES</span>
-            {details.pages ? <BadgeMinus /> : <BadgePlus />}
+            {details.pages ? <Minus /> : <Plus />}
           </summary>
           <p className="flex flex-col flex-wrap w-52 py-3 px-3 gap-4 ">
             <Link to={'/project'} className="w-20 text-white font-custom">
@@ -260,7 +260,7 @@ export function Footer() {
         >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
             <span>SPONSORS</span>
-            {details.sponsors ? <BadgeMinus /> : <BadgePlus />}
+            {details.sponsors ? <Minus /> : <Plus />}
           </summary>
           <p className="flex flex-wrap w-56 py-3 px-4 gap-4 ">
             <img
@@ -295,7 +295,7 @@ export function Footer() {
         >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
             <span> DEVELOPED BY:</span>
-            {details.developed ? <BadgeMinus /> : <BadgePlus />}
+            {details.developed ? <Minus /> : <Plus />}
           </summary>
           <p className="px-3 flex flex-col">
             <p className="font-custom text-lg text-white">
