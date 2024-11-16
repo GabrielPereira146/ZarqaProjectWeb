@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import IconLogo from '../assets/Logo.svg'
 import fapesp from '../assets/FAPESP.svg'
-import unesp from '../assets/UNESP.png'
+import unesp from '../assets/UNESP.svg'
 import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
 import { Github, Linkedin, BadgePlus, BadgeMinus } from 'lucide-react'
@@ -75,7 +75,7 @@ export function Footer() {
                 alt="fapesp Logo"
               />
               <img
-                className="invert opacity-50 w-auto h-14"
+                className="invert opacity-50 w-auto h-12"
                 src={unesp}
                 alt="unesp Logo"
               />
@@ -99,14 +99,14 @@ export function Footer() {
               </p>
               <div className="flex flex-row gap-3 justify-end">
                 <a
-                  href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                  href="https://github.com/GabrielPereira146"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <Github className="text-white/50 hover:text-white" />
                 </a>
                 <a
-                  href="https://github.com/GabrielPereira146"
+                  href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -119,14 +119,14 @@ export function Footer() {
                 Leandro Apolinário Bento
               </p>
               <div className="flex flex-row gap-3 justify-end">
-                <a href="/" target="_blank" rel="noopener noreferrer">
-                  <Github className="text-white/50 hover:text-white" />
-                </a>
                 <a
                   href="https://github.com/BntLeandro"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <Github className="text-white/50 hover:text-white" />
+                </a>
+                <a href="/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="text-white/50 hover:text-white" />
                 </a>
               </div>
@@ -146,7 +146,7 @@ export function Footer() {
               alt="fapesp Logo"
             />
             <img
-              className="invert opacity-50 w-auto h-14"
+              className="invert opacity-50 w-auto h-12"
               src={unesp}
               alt="unesp Logo"
             />
@@ -170,14 +170,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-end">
               <a
-                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
               </a>
               <a
-                href="https://github.com/GabrielPereira146"
+                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -190,14 +190,14 @@ export function Footer() {
               Leandro Apolinário Bento
             </p>
             <div className="flex flex-row gap-3 justify-end">
-              <a href="/" target="_blank" rel="noopener noreferrer">
-                <Github className="text-white/50 hover:text-white" />
-              </a>
               <a
                 href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <Github className="text-white/50 hover:text-white" />
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="text-white/50 hover:text-white" />
               </a>
             </div>
@@ -269,7 +269,7 @@ export function Footer() {
               alt="fapesp Logo"
             />
             <img
-              className="invert opacity-50 w-auto h-14"
+              className="invert opacity-50 w-auto h-12"
               src={unesp}
               alt="unesp Logo"
             />
@@ -303,14 +303,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-start">
               <a
-                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                href="https://github.com/GabrielPereira146"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
               </a>
               <a
-                href="https://github.com/GabrielPereira146"
+                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -324,14 +324,14 @@ export function Footer() {
             </p>
             <div className="flex flex-row gap-3 justify-start">
               <a
-                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
+                href="https://github.com/BntLeandro"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Github className="text-white/50 hover:text-white" />
               </a>
               <a
-                href="https://github.com/BntLeandro"
+                href="https://www.linkedin.com/in/gabriel-dos-santos-pereira/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
