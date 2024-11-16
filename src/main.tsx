@@ -11,6 +11,7 @@ import { Team } from './routes/team'
 import { Grants } from './routes/grants'
 import { Publications } from './routes/publications'
 import { Newsletter } from './routes/newsletter'
+import './i18n/index'
 
 // Hook para alterar o título da aba dinamicamente
 const usePageTitle = (title: string) => {

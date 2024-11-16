@@ -1,0 +1,51 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Inicio",
+      "project": "Projeto",
+      "data": "Dados",
+      "team": "Equipe",
+      "grants": "Financiamentos",
+      "publications": "Publicações",
+      "newsletter": "Noticias"
+    },
+    "footer": {
+      "contact": "CONTATO",
+      "pages": "PÁGINAS",
+      "sponsors": "PATROCINADORES",
+      "developed": "DESENVOLVIDO POR"
+    },
+    "home": {
+      "welcome": "Bem-vindo ao",
+      "zarqaValley": "Vale do ZARQA"
+    },
+    "project": {
+      "objective": "OBJETIVO",
+      "description": "DESCRIÇÃO",
+      "descriptionText": "O período de 2,5 milhões a 1 milhão de anos atrás é um momento crítico na história da Terra: coincide com uma grande mudança na evolução dos hominins na África Oriental, quando o Australopithecus foi substituído por Paranthropus e Homo, e quando a temperatura média da superfície da Terra se tornou mais fria e o clima global mais instável, resultando em ecossistemas mais abertos e as primeiras glaciações em latitudes médias. No contexto dessas mudanças, houve a primeira saída de hominins da África, que se espalhou por toda a Ásia e alcançou a China. O Oriente Médio deve ter desempenhado um papel crucial nessa expansão da África para o leste Asiático, pois era possivelmente o melhor corredor de migração disponível durante o Pleistoceno Inicial e Médio. Se considerarmos o clima semi-árido atual, o Oriente Médio poderia ter constituído um obstáculo biogeográfico para qualquer adaptação desses primeiros hominins, mas o Pleistoceno foi um período de grandes mudanças climáticas e as condições ambientais do passado podem ter sido diferentes das atuais. Isso ainda é um aspecto desconhecido no Oriente Médio e uma grande oportunidade de cooperação internacional com pesquisadores da Jordânia.",
+      "objectiveText": "Este projeto visa estudar a evolução paleoambiental e cultural do vale superior do Zarqa durante o Pleistoceno, em relação aos sítios paleolíticos e explorar fatores que facilitaram a expansão dos hominins na região. Uma abordagem multidisciplinar abrangerá arqueologia, sedimentologia, pedologia, geoquímica e geocronologia. A ênfase recai na investigação das condições ambientais que podem ter influenciado a expansão dos hominins no vale do Zarqa, considerando as mudanças climáticas significativas dos últimos milhões de anos. O projeto também busca fortalecer a cooperação entre o Brasil e a Jordânia no Oriente Médio, construindo sobre uma linha de investigação estabelecida e produtiva."
+    },
+    "data": {
+      "data": "Dados"
+    },
+    "team": {
+      "principalInvestigators": "Pesquisadores Principais",
+      "associateResearchers": "Pesquisadores Associados",
+      "teamMembers": "Membros da equipe"
+    },
+    "grants": {
+      "grants": "Financiamentos"
+    },
+    "publications": {
+      "publications": "Publicações"
+    },
+    "newsletter": {
+      "newsletter": "Boletim informativo",
+      "podcast": "Podcast",
+      "reportage": "Reportagem",
+      "news": "Notícias",
+      "videos": "Vídeos"
+    }
+
+  }
+}

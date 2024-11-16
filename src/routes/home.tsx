@@ -1,11 +1,15 @@
-import HomeImage from '../assets/pictures/landscapeHome.svg'
-import Dune from '../assets/duna.svg'
-import fapesp from '../assets/FAPESP.svg'
-import unesp from '../assets/UNESP.svg'
-import UFPR from '../assets/uf.svg'
-import Wg from '../assets/wg.svg'
+import { useTranslation } from 'react-i18next';
+import HomeImage from '../assets/pictures/landscapeHome.svg';
+import Dune from '../assets/duna.svg';
+import fapesp from '../assets/FAPESP.svg';
+import unesp from '../assets/UNESP.svg';
+import UFPR from '../assets/uf.svg';
+import Wg from '../assets/wg.svg';
+
 
 export function Home() {
+  const { t } = useTranslation(); // Hook para acessar a tradução
+
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800 relative">
       <div className="relative">
@@ -14,10 +18,10 @@ export function Home() {
         </div>
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center py-[10%]">
           <p className="text-white dark:text-zinc-800 text-xl md:text-3xl lg:text-4xl font-custom font-medium">
-            Welcome to
+            {t('home.welcome')}
           </p>
           <p className="text-white dark:text-zinc-800 text-3xl md:text-8xl lg:text-9xl font-custom font-medium">
-            ZARQA Valley
+            {t('home.zarqaValley')}
           </p>
         </div>
       </div>
@@ -57,5 +61,5 @@ export function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }

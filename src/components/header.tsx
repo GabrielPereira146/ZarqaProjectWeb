@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import IconLogo from '../assets/Logo.svg'
 import { MenuIcon } from 'lucide-react'
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next';
 
 export function Header() {
+  const { t } = useTranslation(); // Hook para acessar a tradução
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const toggleMobileMenu = () => {
@@ -59,43 +61,43 @@ export function Header() {
           to={'/'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Home
+          {t('navbar.home')}
         </Link>
         <Link
           to={'project'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Project
+          {t('navbar.project')}
         </Link>
         <Link
           to={'grants'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Grants
+          {t('navbar.grants')}
         </Link>
         <Link
           to={'team'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Team
+          {t('navbar.team')}
         </Link>
         <Link
           to={'newsletter'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Newsletter
+          {t('navbar.newsletter')}
         </Link>
         <Link
           to={'publications'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Publications
+          {t('navbar.publications')}
         </Link>
         <Link
           to={'data'}
           className="h-full w-32 py-2 font-custom font-medium text-zinc-900 text-center hover:bg-sand-200/50"
         >
-          Data
+          {t('navbar.data')}
         </Link>
       </nav>
       {/*MOBILE NAVIGATION MENU */}
@@ -115,49 +117,49 @@ export function Header() {
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Home
+              {t('navbar.home')}
             </Link>
             <Link
               to={'project'}
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Project
+               {t('navbar.project')}
             </Link>
             <Link
               to={'grants'}
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Grants
+               {t('navbar.grants')}
             </Link>
             <Link
               to={'team'}
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Team
+               {t('navbar.team')}
             </Link>
             <Link
               to={'newsletter'}
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Newsletter
+              {t('navbar.newsletter')}
             </Link>
             <Link
               to={'publications'}
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Publications
+              {t('navbar.publications')}
             </Link>
             <Link
               to={'data'}
               className="w-full px-6 py-2 font-custom font-medium text-zinc-900 hover:bg-sand-200/50"
               onClick={closeMobileMenu}
             >
-              Data
+              {t('navbar.data')}
             </Link>
           </nav>
         )}

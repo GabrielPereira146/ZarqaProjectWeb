@@ -6,8 +6,10 @@ import UFPR from '../assets/uf.svg'
 import Wg from '../assets/wg.svg'
 import { Github, Linkedin, Plus, Minus } from 'lucide-react'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function Footer() {
+  const { t } = useTranslation(); // Hook para acessar a tradução
   const [details, setDetails] = useState({
     contact: false,
     pages: false,
@@ -37,37 +39,37 @@ export function Footer() {
         {/* Footer XLarge and 2XLarge */}
         <div className="sm:flex hidden flex-row w-full xl:gap-8 gap-4 lg:justify-center justify-around">
           <div className="flex flex-col py-4 px-3 gap-3">
-            <p className="text-sand-200 font-custom">CONTACT</p>
+            <p className="text-sand-200 font-custom">{t('footer.contact')}</p>
             <p className="px-3 font-custom text-lg text-white">@unesp.br</p>
           </div>
           <div className="flex flex-col py-4 px-3">
-            <p className="text-sand-200 font-custom">PAGES</p>
+            <p className="text-sand-200 font-custom">{t('footer.pages')}</p>
             <div className="flex flex-wrap w-52 py-3 px-3 gap-4 ">
               <Link to={'/project'} className="w-20 text-white font-custom">
-                Project
+                {t('navbar.project')}
               </Link>
               <Link to={'/grants'} className="w-20 text-white font-custom">
-                Grants
+                {t('navbar.grants')}
               </Link>
               <Link to={'/team'} className="w-20 text-white font-custom">
-                Team
+              {t('navbar.team')}
               </Link>
               <Link to={'/newsletter'} className="w-20 text-white font-custom">
-                Newsletter
+              {t('navbar.newsletter')}
               </Link>
               <Link
                 to={'/publications'}
                 className="w-20 text-white font-custom"
               >
-                Publications
+                {t('navbar.publications')}
               </Link>
               <Link to={'/data'} className="w-20 text-white font-custom">
-                Data
+                {t('navbar.data')}
               </Link>
             </div>
           </div>
           <div className="hidden 2xl:flex flex-col py-4 px-3">
-            <p className="text-sand-200 font-custom">SPONSORS</p>
+            <p className="text-sand-200 font-custom">{t('footer.sponsors')}</p>
             <div className="flex flex-wrap w-96 py-3 px-4 gap-4 ">
               <img
                 className="invert opacity-50 w-auto h-9"
@@ -92,7 +94,7 @@ export function Footer() {
             </div>
           </div>
           <div className="hidden lg:flex flex-col py-4 px-3 gap-3">
-            <p className="font-custom text-sand-200 ">DEVELOPED BY:</p>
+            <p className="font-custom text-sand-200 ">{t('footer.developed')}</p>
             <div className="px-3 flex flex-col">
               <p className="font-custom text-lg text-white">
                 Gabriel dos Santos Pereira
@@ -138,7 +140,7 @@ export function Footer() {
       {/* Footer Large/Medium/Small */}
       <div className="hidden 2xl:hidden sm:flex flex-row md:w-11/12 pl-2 lg:pl-0 justify-between w-full lg:w-full ">
         <div className="flex 2xl:hidden lg:w-full py-3 xl:pl-44 lg:pl-52 lg:justify-center ml-0 lg:flex-row flex-col">
-          <p className="text-sand-200 font-custom">SPONSORS</p>
+          <p className="text-sand-200 font-custom">{t('footer.sponsors')}</p>
           <div className="lg:justify-center flex flex-wrap lg:w-auto w-96 px-4 gap-4 ">
             <img
               className="invert opacity-50 w-auto h-9"
@@ -213,7 +215,7 @@ export function Footer() {
           className="flex flex-col py-4 px-3 gap-2 hover:bg-zinc-800"
         >
           <summary className="text-sand-200 font-custom  flex flex-row justify-between">
-            <span>CONTACT</span>
+            <span>{t('footer.contact')}</span>
             {details.contact ? <Minus /> : <Plus />}
           </summary>
 
@@ -226,27 +228,27 @@ export function Footer() {
           className="flex flex-col py-4 px-3  hover:bg-zinc-800"
         >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
-            <span>PAGES</span>
+            <span>{t('footer.pages')}</span>
             {details.pages ? <Minus /> : <Plus />}
           </summary>
           <p className="flex flex-col flex-wrap w-52 py-3 px-3 gap-4 ">
             <Link to={'/project'} className="w-20 text-white font-custom">
-              Project
+              {t('navbar.project')}
             </Link>
             <Link to={'/grants'} className="w-20 text-white font-custom">
-              Grants
+              {t('navbar.grants')}
             </Link>
             <Link to={'/team'} className="w-20 text-white font-custom">
-              Team
+              {t('navbar.team')}
             </Link>
             <Link to={'/newsletter'} className="w-20 text-white font-custom">
-              Newsletter
+              {t('navbar.newsletter')}
             </Link>
             <Link to={'/publications'} className="w-20 text-white font-custom">
-              Publications
+              {t('navbar.publications')}
             </Link>
             <Link to={'/data'} className="w-20 text-white font-custom">
-              Data
+              {t('navbar.data')}
             </Link>
           </p>
         </details>
@@ -259,7 +261,7 @@ export function Footer() {
           className="flex flex-col py-4 px-3  hover:bg-zinc-800"
         >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
-            <span>SPONSORS</span>
+            <span>{t('footer.sponsors')}</span>
             {details.sponsors ? <Minus /> : <Plus />}
           </summary>
           <p className="flex flex-wrap w-56 py-3 px-4 gap-4 ">
@@ -294,7 +296,7 @@ export function Footer() {
           className="flex flex-col py-4 px-3 gap-3 hover:bg-zinc-800"
         >
           <summary className="text-sand-200 font-custom flex flex-row justify-between">
-            <span> DEVELOPED BY:</span>
+            <span> {t('footer.developed')}</span>
             {details.developed ? <Minus /> : <Plus />}
           </summary>
           <p className="px-3 flex flex-col">

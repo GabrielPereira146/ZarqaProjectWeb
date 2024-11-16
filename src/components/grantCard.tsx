@@ -19,15 +19,15 @@ const GrantCard = ({title, number, support, date_start, date_end, abstractText, 
             </p>
             <div className="flex font-semibold justify-between 2xl:w-2/5 lg:w-3/5 md:w-5/6 w-full md:text-base text-xs">
                 <div className="flex flex-col">
-                    <p className="dark:text-white">Processo</p>
+                    <p className="dark:text-white">Process</p>
                     <p className="font-normal text-zinc-500">{number}</p>
                 </div>
                 <div className="flex flex-col">
-                    <p className="dark:text-white">Modalidade de apoio</p>
+                    <p className="dark:text-white">Support modality</p>
                     <p className="font-normal text-zinc-500">{support}</p>
                 </div>
                 <div className="flex flex-col">
-                    <p className="dark:text-white">Vigência</p>
+                    <p className="dark:text-white">Tenure</p>
                     <p className="font-normal text-zinc-500">{date_start} - {date_end}</p>
                 </div>
             </div>

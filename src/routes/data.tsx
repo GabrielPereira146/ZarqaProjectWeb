@@ -1,10 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 export function Data() {
+  const { t } = useTranslation(); // Hook para acessar a tradução
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
         <div className="flex flex-col pl-16 py-4 md:py-8 gap-4 h-full">
           <p className="font-extrabold text-xl md:text-4xl dark:text-white">
-            Map
+            {t('data.data')}
           </p>
           <iframe
             className="w-full rounded pr-16 aspect-[3/4] md:aspect-[2/1]"

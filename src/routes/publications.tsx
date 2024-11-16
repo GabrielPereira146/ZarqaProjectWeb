@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ErrorPage } from "../components/error";
 import { Loading } from "../components/loading";
 import PublicationCard from "../components/PublicationCard";
@@ -6,6 +7,7 @@ import { usePublicationsData } from "../hooks/usePublicationsData";
 export function Publications() {
 
   const { data, isLoading, isError, error } = usePublicationsData();
+  const { t } = useTranslation(); // Hook para acessar a tradução
   
   if (isLoading) {
     return (
@@ -23,7 +25,7 @@ export function Publications() {
       <div className="h-auto w-full gap-4 md:gap-8 bg-white dark:bg-zinc-800">
         <div className="flex flex-col md:px-16 px-4 py-4 md:py-8 gap-4 h-full">
           <p className="font-extrabold text-xl md:text-4xl dark:text-white">
-            Publications
+            {t('publications.publications')}
           </p>
           {data?.map((publiData) => (
             <div key={publiData.id}>

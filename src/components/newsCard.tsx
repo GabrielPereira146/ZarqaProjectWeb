@@ -1,13 +1,20 @@
-interface NewsCardProps {
+import type { ComponentProps } from "react";
+import { twMerge } from "tailwind-merge";
+
+interface NewsCardProps extends ComponentProps<"div"> {
   title: string;
   date: string;
   imageUrl: string;
   link: string;
 }
 
-export function NewsCard({ title, date, imageUrl, link }: NewsCardProps) {
+export function NewsCard({ title, date, imageUrl, link, className, ...props }: NewsCardProps) {
   return (
-    <div className="flex flex-col border-2 border-sand-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white dark:bg-zinc-800">
+    <div className={twMerge(
+      "flex flex-col border-2 border-sand-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300",
+      className
+    )}
+      {...props}>
       <img
         className="w-full h-48 object-cover rounded-t-lg"
         src={imageUrl}
