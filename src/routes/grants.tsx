@@ -1,12 +1,23 @@
+
+import { ErrorPage } from "../components/error";
 import GrantCard from "../components/grantCard";
 import { useGrantsData } from "../hooks/useGrantsData";
+import { Loading } from "../components/loading";
 
 export function Grants() {
 
   const { data, isLoading, isError, error } = useGrantsData();
 
-  if (isLoading) return <div className="dark: text-white">Loading...</div>; // Show a loading state
-  if (isError) return <div className="dark: text-white">Error: {error.message}</div>; // Show an error message
+  if (isLoading) {
+    return (
+      <Loading />
+    );
+  }
+  if (isError) {
+    return (
+      <ErrorPage erro={error.message} />
+    );
+  }
 
   return (
     <div className="flex flex-col w-full h-auto justify-center gap-8 bg-white dark:bg-zinc-800">
@@ -17,12 +28,9 @@ export function Grants() {
           </p>
           {data?.map((grantsData) => (
             <div key={grantsData.id}>
-                <GrantCard title={grantsData.title} number={grantsData.number} support={grantsData.support} date_start={grantsData.date_start} date_end={grantsData.date_end} abstractText={grantsData.abstractText} link={grantsData.link}  />
+              <GrantCard title={grantsData.title} number={grantsData.number} support={grantsData.support} date_start={grantsData.date_start} date_end={grantsData.date_end} abstractText={grantsData.abstractText} link={grantsData.link} />
             </div>
-            ))}
-          <p className="text-2xl font-semibold text-zinc-500 dark:text-white my-4">
-            Developing...
-          </p>
+          ))}
         </div>
       </div>
     </div>

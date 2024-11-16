@@ -55,7 +55,10 @@ export function TeamSection({
               </div>
             ))
         ) : (
-          <p className="text-zinc-500">Carregando...</p> // Mensagem de carregamento
+          <div className='h-32'>
+            <p className="text-zinc-500 text-2xl px-5">Loading...</p>
+          </div>
+
         )}
       </div>
     </div>
